@@ -13,8 +13,8 @@ description: "Choose a robot and find its connection, sensor, and development gu
     <a class="start-button" href="{{ '/getting-started/' | relative_url }}">Start your first lab session →</a>
   </div>
   <figure class="hero-media">
-    <img src="{{ '/assets/lab-robots-showcase.webp' | relative_url }}" alt="Widget, the Go2, and Wobby, the Go1, in front of Evan Wobbier, the G1 humanoid, in the DyCo-AI lab." width="720" height="1280" fetchpriority="high">
-    <figcaption>Wobby, Widget, and Evan Wobbier. A frame from our lab robot showcase.</figcaption>
+    <img src="{{ '/assets/lab-robots-showcase.gif' | relative_url }}" alt="Looping lab showcase of Widget, the Go2, and Wobby, the Go1, in front of Evan Wobbier, the G1 humanoid." width="320" height="568" fetchpriority="high">
+    <figcaption>Wobby, Widget, and Evan Wobbier in our lab robot showcase.</figcaption>
   </figure>
 </div>
 
@@ -53,6 +53,6 @@ questions, and turn a first connection into an experiment you can explain and
 build on. This handbook helps each new group carry that work forward.
 
 <figure class="lab-photo">
-  <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1440" height="960" loading="lazy" decoding="async">
+  <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Hands-on robot development in the DyCo-AI Lab at Clemson University.</figcaption>
 </figure>

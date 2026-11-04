@@ -17,14 +17,16 @@ and firmware-specific behavior.
 - [DyCo-AI/go2-webRTC](https://github.com/DyCo-AI/go2-webRTC): Windows Basic UI, Python examples, backflip GIF, and upstream screenshot attribution.
 - [DyCo-AI/g1-ros2](https://github.com/DyCo-AI/g1-ros2): G1 profile, network addresses, ROS/Rerun status, lab robot photograph, and combined diagnostics screenshot.
 
-The landing image, `assets/lab-robots-showcase.webp`, is a frame at approximately
-one second from the instructor-supplied `robot_showcase.mp4`. It shows Wobby
-(Go1), Widget (Go2), and Evan Wobbier (G1). The frame is exported as a 720 × 1280
-WebP (about 55 KiB), with source metadata removed. The original video remains
-local and excluded from Git; the landing image has no audio or autoplay.
+The landing animation, `assets/lab-robots-showcase.gif`, is an optimized looping
+export of the instructor-supplied `robot_showcase.mp4`. It shows Wobby (Go1),
+Widget (Go2), and Evan Wobbier (G1). The GIF preserves the approximately
+3.1-second showcase at 320 × 568, 8 frames per second, and 64 palette colors.
+It loops automatically and contains no audio or source metadata. The original
+video remains local and excluded from Git. The earlier static WebP remains
+available in the assets folder as a lightweight still reference.
 
 The closing landing-page photograph, `assets/dyco-ai-lab.webp`, is an optimized
-1440 × 960 copy of the instructor-supplied `lab-photo.jpg`. Source metadata is
+1200 × 800 WebP (quality 76) copy of the instructor-supplied `lab-photo.jpg`. Source metadata is
 removed; the full-resolution original remains local. The photo is supplied for
 this lab handbook and depicts hands-on work in the lab.
 
