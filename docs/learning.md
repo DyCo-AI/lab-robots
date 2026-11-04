@@ -16,7 +16,7 @@ is one application; basic onboarding remains reusable across research and course
 | --- | --- |
 | [CI course repository](https://github.com/DyCo-AI/go1_gesture_tracking) | Course website, weekly expectations, and assignment information |
 | [go1-mujoco-playground](https://github.com/sriram-2502/go1-mujoco-playground) | Student code, Python/MediaPipe exercises, simulation, and hardware learning instructions |
-| [Go2 gesture-navigation instructor reference](https://github.com/sriram-2502/go2-webrtc-gesture-nav) | Clemson dashboard and reference hardware integration |
+| [Go2 gesture-navigation instructor reference](https://github.com/sriram-2502/go2-gesture-nav) | Clemson dashboard and reference hardware integration |
 | [Lab Basic WebRTC](https://github.com/DyCo-AI/go2-webRTC) | Small, independent robot connection and UI baseline |
 
 Start with simulation, learn to extract gestures and map them to bounded

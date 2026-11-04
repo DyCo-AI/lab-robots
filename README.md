@@ -43,7 +43,7 @@ in independent repositories:
 For the Clemson Creative Inquiry learning path, see
 [Courses and projects](https://dyco-ai.github.io/lab-robots/learning/), the
 [simulation and student code](https://github.com/sriram-2502/go1-mujoco-playground),
-and the [Go2 gesture-navigation instructor reference](https://github.com/sriram-2502/go2-webrtc-gesture-nav).
+and the [Go2 gesture-navigation instructor reference](https://github.com/sriram-2502/go2-gesture-nav).
 The lab starters remain independent of those course applications.
 
 ## Publishing and local preview
