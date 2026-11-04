@@ -15,7 +15,7 @@ in independent repositories:
 | Go2 Ethernet / Jetson / ROS 2 | [go2-ros](https://github.com/DyCo-AI/go2-ros) |
 | Go2 Windows 11 / Wi-Fi / Basic WebRTC | [go2-webRTC](https://github.com/DyCo-AI/go2-webRTC) |
 | G1 Ubuntu / ROS 2 / diagnostics | [g1-ros2](https://github.com/DyCo-AI/g1-ros2) |
-| Go1 | Public handbook integration pending; request existing notes from the lab maintainer |
+| Go1 | [go1_info](https://github.com/DyCo-AI/go1_info) — existing setup notes; requires lab repository access |
 
 ## Publishing and local preview
 
