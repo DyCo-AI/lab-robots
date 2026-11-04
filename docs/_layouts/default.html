@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  <script src="{{ '/assets/site.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="mobile-header"><a href="{{ '/' | relative_url }}">DyCo-AI / Lab Robots</a><button id="menu-toggle" aria-expanded="false" aria-controls="sidebar">Menu</button></header>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">D / A</span><strong>DyCo-AI</strong><span>Lab Robots</span></a>
+    <p class="institution">Clemson University<br>Robot onboarding & development</p>
+    <label class="finder-label" for="page-finder">Find a guide</label>
+    <input id="page-finder" type="search" placeholder="Try camera, SSH, Go2…" autocomplete="off">
+    <nav aria-label="Handbook">
+    {% for group in site.data.navigation %}
+      <section class="nav-group"><h2>{{ group.title }}</h2>
+      {% for item in group.items %}
+        <a class="nav-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}" data-search="{{ item.title | append: ' ' | append: item.keywords | escape }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}</section>
+    {% endfor %}
+    </nav>
+    <p id="no-results" hidden role="status">No matching guides.</p>
+    <a class="repo-link" href="https://github.com/DyCo-AI/lab-robots">Handbook on GitHub ↗</a>
+  </aside>
+  <div class="page-shell">
+    <div class="topline"><span>THE LAB HANDBOOK</span><a href="https://github.com/DyCo-AI/lab-robots/blob/main/docs/{{ page.path }}">Edit this page ↗</a></div>
+    <main id="main" tabindex="-1"><article>{{ content }}</article></main>
+    <footer>DyCo-AI Lab · Clemson University<br>Start with observation. Follow the robot's current runbook before motion.</footer>
+  </div>
+</body>
+</html>

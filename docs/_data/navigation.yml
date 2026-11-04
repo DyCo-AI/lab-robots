@@ -1,0 +1,47 @@
+- title: Start here
+  items:
+    - title: Welcome
+      url: /
+      keywords: overview robots handbook
+    - title: First lab session
+      url: /getting-started/
+      keywords: safety credentials access prerequisites
+- title: Go2 EDU
+  items:
+    - title: Choose your Go2 path
+      url: /go2/
+      keywords: quadruped windows ethernet wifi
+    - title: Ethernet and ROS 2
+      url: /go2/ros/
+      keywords: ssh jetson foxy software rosbag
+    - title: Windows and WebRTC
+      url: /go2/webrtc/
+      keywords: camera voxels wifi aes python mapping slam
+- title: G1 humanoid
+  items:
+    - title: G1 overview
+      url: /g1/
+      keywords: humanoid ubuntu humble gantry
+    - title: ROS 2 first connection
+      url: /g1/ros/
+      keywords: ethernet network jetson dds ssh
+    - title: Sensors and diagnostics
+      url: /g1/sensors/
+      keywords: rerun camera lidar imu dex3 hands recording
+- title: Lab resources
+  items:
+    - title: Go1 status
+      url: /go1/
+      keywords: quadruped legacy development
+    - title: Courses and projects
+      url: /learning/
+      keywords: creative inquiry ci gestures mediapipe simulation
+    - title: Troubleshooting
+      url: /troubleshooting/
+      keywords: connection network authentication problems
+    - title: Roadmap and handover
+      url: /roadmap/
+      keywords: todo maintenance passwords proton pass
+    - title: Sources and media
+      url: /sources/
+      keywords: attribution credits references

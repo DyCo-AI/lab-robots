@@ -1,0 +1,15 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+Gemfile.lock
+private/
+.env
+*.key
+*.pem
+*.bag
+*.db3
+*.mcap
+*.rrd
+*.mp4
