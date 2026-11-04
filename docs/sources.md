@@ -13,6 +13,10 @@ and firmware-specific behavior.
 
 ## Lab repositories
 
+The lab logo, `assets/dyco-ai-lab-logo.png`, is copied unchanged from
+[`docs/_images/lab-logo.png` in the Creative Inquiry course website](https://github.com/DyCo-AI/go1_gesture_tracking/blob/main/docs/_images/lab-logo.png).
+It is used for the handbook sidebar, mobile header, and browser tab icon.
+
 - [DyCo-AI/go2-ros](https://github.com/DyCo-AI/go2-ros): Ethernet/Jetson setup, ROS baseline, annotated lab photograph, and velocity GIF.
 - [DyCo-AI/go2-webRTC](https://github.com/DyCo-AI/go2-webRTC): Windows Basic UI, Python examples, backflip GIF, and upstream screenshot attribution.
 - [DyCo-AI/g1-ros2](https://github.com/DyCo-AI/g1-ros2): G1 profile, network addresses, ROS/Rerun status, lab robot photograph, and combined diagnostics screenshot.
