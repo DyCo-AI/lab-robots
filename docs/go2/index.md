@@ -5,7 +5,9 @@ description: "Choose Ethernet and onboard ROS 2, or Windows Wi-Fi and Basic WebR
 ---
 
 <p class="eyebrow">Quadruped / Two development paths</p>
-# Unitree Go2 EDU
+# Widget: Unitree Go2 EDU
+
+**Widget** is the lab's Go2 EDU quadruped.
 
 The Go2 starters make high-level robot experiments accessible from a Windows
 laptop. Choose Ethernet/Jetson/ROS for robot-side development and bags, or

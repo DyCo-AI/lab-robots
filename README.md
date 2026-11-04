@@ -10,6 +10,8 @@ This repository owns onboarding, route selection, and links to the maintained
 robot runbooks. Executable examples and detailed installation instructions live
 in independent repositories:
 
+Meet **Wobby (Go1)**, **Widget (Go2 EDU)**, and **Evan Wobbier (G1)**.
+
 | Robot / path | Code and detailed runbooks |
 | --- | --- |
 | Go2 Ethernet / Jetson / ROS 2 | [go2-ros](https://github.com/DyCo-AI/go2-ros) |

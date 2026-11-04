@@ -4,7 +4,9 @@ title: "Go1 status"
 description: "Find existing Go1 references while the unified onboarding path is prepared."
 ---
 
-# Go1: existing resources
+# Wobby: Unitree Go1
+
+**Wobby** is the lab's Go1 quadruped.
 
 Go1 remains part of the lab's robot collection. Its unified handbook onboarding
 is pending; use the existing material with the instructor and check its hardware

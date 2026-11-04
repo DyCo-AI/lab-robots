@@ -6,22 +6,22 @@
     - title: First lab session
       url: /getting-started/
       keywords: safety credentials access prerequisites
-- title: Go2 EDU
+- title: Widget / Go2 EDU
   items:
     - title: Choose your Go2 path
       url: /go2/
-      keywords: quadruped windows ethernet wifi
+      keywords: widget quadruped windows ethernet wifi
     - title: Ethernet and ROS 2
       url: /go2/ros/
       keywords: ssh jetson foxy software rosbag
     - title: Windows and WebRTC
       url: /go2/webrtc/
       keywords: camera voxels wifi aes python mapping slam
-- title: G1 humanoid
+- title: Evan Wobbier / G1
   items:
     - title: G1 overview
       url: /g1/
-      keywords: humanoid ubuntu humble gantry
+      keywords: evan wobbier humanoid ubuntu humble gantry
     - title: ROS 2 first connection
       url: /g1/ros/
       keywords: ethernet network jetson dds ssh
@@ -30,9 +30,9 @@
       keywords: rerun camera lidar imu dex3 hands recording
 - title: Lab resources
   items:
-    - title: Go1 status
+    - title: Wobby / Go1
       url: /go1/
-      keywords: quadruped legacy development
+      keywords: wobby quadruped legacy development
     - title: Courses and projects
       url: /learning/
       keywords: creative inquiry ci gestures mediapipe simulation

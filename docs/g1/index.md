@@ -5,7 +5,9 @@ description: "Discover the G1 lab configuration and the current ROS 2 diagnostic
 ---
 
 <p class="eyebrow">Humanoid / Observation before actuation</p>
-# Unitree G1
+# Evan Wobbier: Unitree G1
+
+**Evan Wobbier** is the lab's G1 humanoid.
 
 **[Open the g1-ros2 workspace](https://github.com/DyCo-AI/g1-ros2)**
 
