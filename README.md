@@ -1,6 +1,6 @@
 # DyCo-AI Lab Robots
 
-**Meet the robots. Build your first experiment.**
+**Connect, inspect, and maintain the lab robots.**
 
 The public robot handbook for the **DyCo-AI Lab at Clemson University**: a
 practical starting point for students to understand a robot, connect to it,
@@ -23,7 +23,7 @@ inspect its sensors, and build on a maintained example.
 
 | Robot | Starting point |
 | --- | --- |
-| **Widget / Go2 EDU** | [Windows and WebRTC](https://dyco-ai.github.io/lab-robots/go2/webrtc/) for camera/voxels and high-level Python applications; [Ethernet and ROS 2](https://dyco-ai.github.io/lab-robots/go2/ros/) for onboard Jetson development and bags |
+| **Widget / Go2 EDU** | [Ethernet and ROS 2](https://dyco-ai.github.io/lab-robots/go2/ros/) for onboard Jetson access, state inspection, bounded commands, and bags |
 | **Evan Wobbier / G1** | [ROS 2 first connection](https://dyco-ai.github.io/lab-robots/g1/ros/) and [sensor diagnostics](https://dyco-ai.github.io/lab-robots/g1/sensors/) on Ubuntu with Rerun |
 | **Wobby / Go1** | [Ethernet and SSH first connection](https://dyco-ai.github.io/lab-robots/go1/), with the legacy ROS 1 boundary and private historical notes clearly separated |
 
@@ -36,15 +36,8 @@ in independent repositories:
 | Robot / path | Code and detailed runbooks |
 | --- | --- |
 | Go2 Ethernet / Jetson / ROS 2 | [go2-ros](https://github.com/DyCo-AI/go2-ros) |
-| Go2 Windows 11 / Wi-Fi / Basic WebRTC | [go2-webRTC](https://github.com/DyCo-AI/go2-webRTC) |
 | G1 Ubuntu / ROS 2 / diagnostics | [g1-ros2](https://github.com/DyCo-AI/g1-ros2) |
 | Go1 legacy ROS 1, camera, and hardware notes | [go1_info](https://github.com/DyCo-AI/go1_info) — private historical source material used by the public Go1 first-connection guide |
-
-For the Clemson Creative Inquiry learning path, see
-[Courses and projects](https://dyco-ai.github.io/lab-robots/learning/), the
-[simulation and student code](https://github.com/sriram-2502/go1-mujoco-playground),
-and the [Go2 gesture-navigation instructor reference](https://github.com/sriram-2502/go2-gesture-nav).
-The lab starters remain independent of those course applications.
 
 ## Publishing and local preview
 
@@ -62,7 +55,7 @@ bundle exec jekyll serve --source docs --baseurl /lab-robots
 Open `http://127.0.0.1:4000/lab-robots/`. For a build only, use
 `bundle exec jekyll build --source docs`.
 
-No passwords, AES keys, account recovery material, or full experiment recordings
+No passwords, account recovery material, or full experiment recordings
 belong in this public repository. Request credentials privately from the lab
 maintainer. Proton Pass migration is planned; the shared vault is not yet live.
 

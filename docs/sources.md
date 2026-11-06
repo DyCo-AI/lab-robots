@@ -13,12 +13,10 @@ and firmware-specific behavior.
 
 ## Lab repositories
 
-The lab logo, `assets/dyco-ai-lab-logo.png`, is copied unchanged from
-[`docs/_images/lab-logo.png` in the Creative Inquiry course website](https://github.com/DyCo-AI/go1_gesture_tracking/blob/main/docs/_images/lab-logo.png).
-It is used for the handbook sidebar, mobile header, and browser tab icon.
+The lab logo, `assets/dyco-ai-lab-logo.png`, is the DyCo-AI lab mark used for
+the handbook sidebar, mobile header, and browser tab icon.
 
 - [DyCo-AI/go2-ros](https://github.com/DyCo-AI/go2-ros): Ethernet/Jetson setup, ROS baseline, annotated lab photograph, and velocity GIF.
-- [DyCo-AI/go2-webRTC](https://github.com/DyCo-AI/go2-webRTC): Windows Basic UI, Python examples, backflip GIF, and upstream screenshot attribution.
 - [DyCo-AI/g1-ros2](https://github.com/DyCo-AI/g1-ros2): G1 profile, network addresses, ROS/Rerun status, lab robot photograph, and combined diagnostics screenshot.
 - [DyCo-AI/go1_info](https://github.com/DyCo-AI/go1_info): private historical Go1 Ethernet, onboard-computer, ROS 1, camera, and competition notes. The handbook publishes a credential-free first-connection procedure derived from these notes.
 
@@ -35,14 +33,10 @@ The closing landing-page photograph, `assets/dyco-ai-lab.webp`, is an optimized
 removed; the full-resolution original remains local. The photo is supplied for
 this lab handbook and depicts hands-on work in the lab.
 
-Other images are linked from their owning repositories rather than copied into
-this handbook. The Go2 Basic screenshot originates from
-[legion1581/unitree_ui](https://github.com/legion1581/unitree_ui), under its MIT
-license; the starter retains the notice in
-[SOURCES.md and its linked license](https://github.com/DyCo-AI/go2-webRTC/blob/main/SOURCES.md).
-It depicts the upstream UI, not a Clemson field capture. The lab supplied the
-robot photographs and motion clips. Each owning repository retains its media
-context and notices; no external media ownership is claimed here.
+Other images are linked from their owning robot repositories rather than copied
+into this handbook. The lab supplied the robot photographs and motion clips.
+Each owning repository retains its media context and notices; no external media
+ownership is claimed here.
 
 ## Official development references
 

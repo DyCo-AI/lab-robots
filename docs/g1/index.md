@@ -45,6 +45,6 @@ hardware acceptance pending. Automated readiness, synchronized recording/replay,
 and native RealSense depth integration remain future or in-progress work.
 Locomotion is outside the initial pilot.
 
-G1 Wi-Fi/WebRTC onboarding is **not yet documented or qualified**. Its Wi-Fi
-credentials and AES key still need to be obtained and verified privately.
-Use the ROS/Ethernet path here; do not apply the Go2 setup to the G1 unchanged.
+Use the ROS 2/Ethernet path documented here. Do not apply network addresses,
+credentials, message types, or launch commands from another Unitree model to
+the G1 unchanged.

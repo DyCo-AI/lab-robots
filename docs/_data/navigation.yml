@@ -13,15 +13,12 @@
       keywords: wobby quadruped ethernet ssh nano xavier ros1 legacy
 - title: Widget / Go2 EDU
   items:
-    - title: Choose your Go2 path
+    - title: Go2 overview
       url: /go2/
-      keywords: widget quadruped windows ethernet wifi
+      keywords: widget quadruped ethernet jetson ros2
     - title: Ethernet and ROS 2
       url: /go2/ros/
       keywords: ssh jetson foxy software rosbag
-    - title: Windows and WebRTC
-      url: /go2/webrtc/
-      keywords: camera voxels wifi aes python mapping slam
 - title: Evan Wobbier / G1
   items:
     - title: G1 overview
@@ -35,9 +32,6 @@
       keywords: rerun camera lidar imu dex3 hands recording
 - title: Lab resources
   items:
-    - title: Courses and projects
-      url: /learning/
-      keywords: creative inquiry ci gestures mediapipe simulation
     - title: Troubleshooting
       url: /troubleshooting/
       keywords: connection network authentication problems

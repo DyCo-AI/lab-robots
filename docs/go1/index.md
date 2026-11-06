@@ -148,10 +148,9 @@ is standing or while a controller process is active.
 
 - Review the private [`go1_info`](https://github.com/DyCo-AI/go1_info)
   repository with its maintainer before using the legacy ROS 1 stack.
-- Use [Courses and projects]({{ '/learning/' | relative_url }}) for simulation,
-  Python, MediaPipe, and gesture-navigation exercises before hardware control.
-- For new high-level hardware projects, use the maintained Go2 WebRTC path
-  unless the experiment specifically requires Go1.
+- Before commanding motion, add a reviewed Go1 runbook that identifies the
+  active command source, remote intervention procedure, bounded test, and stop
+  criteria for Wobby's current firmware.
 
 ## Still to validate on Wobby
 

@@ -9,7 +9,7 @@ description: "Prepare your computer, request access, and complete a supervised f
 ## Before connecting
 
 - Ask the instructor which robot, computer, and experiment you are assigned.
-- Obtain the active SSH/Wi-Fi credentials and any robot-specific AES key privately. The public repositories contain no shared credential inventory. Proton Pass migration is planned.
+- Obtain the active SSH or Wi-Fi credentials privately. The public repositories contain no shared credential inventory. Proton Pass migration is planned.
 - Install tools while you still have internet access. The Go2 direct Wi-Fi network may not provide internet.
 - Read the robot's current hardware and operator runbook with a trained lab member. Identify the paired remote and intervention procedure before enabling motion.
 
@@ -19,14 +19,13 @@ description: "Prepare your computer, request access, and complete a supervised f
 | --- | --- | --- |
 | Go1 legacy development | Linux host configures the privately issued host CIDR and uses SSH | Direct Ethernet reaches the robot controller and a privately issued onboard SSH endpoint |
 | Go2 ROS | Windows 11 provides SSH, editor, Git | Python and ROS 2 run on the onboard Jetson over Ethernet |
-| Go2 WebRTC | Windows 11 runs the local browser UI or Python client | Direct robot Wi-Fi carries WebRTC state, video, and high-level commands |
 | G1 ROS | Ubuntu 22.04 runs ROS 2 Humble and Rerun | Ethernet connects to the robot LAN; optional SSH accesses the onboard Jetson separately |
 
 ## First checkout
 
 Start with network and read-only feedback. On Go1, complete the Ethernet, ping,
 and SSH inventory without launching the historical controller stack. On Go2,
-confirm the selected robot, fresh state, and camera/voxels where available. On
+confirm the selected robot, onboard Jetson, and ROS 2 state. On
 G1, use the supported gantry setup and read-only ROS/Rerun runbook. G1
 diagnostics do not require a motion test.
 
