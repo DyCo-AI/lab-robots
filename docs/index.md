@@ -8,7 +8,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
   <div>
     <p class="eyebrow">DyCo-AI · Clemson University</p>
     <h1>Connect, inspect, and maintain the lab robots.</h1>
-    <p class="lead">Robot-specific startup, networking, ROS, sensor, diagnostics, and maintenance guides for the DyCo-AI Lab.</p>
+    <p class="lead">Robot-specific startup, networking, ROS, sensor, diagnostics, and maintenance guides for the <a href="https://dyco-ai.github.io/dycoailab_web/">Dynamics and Controls for Autonomy and Intelligence (DyCo-AI) Lab</a>. Explore the lab's work on the <a href="https://github.com/DyCo-AI">DyCo-AI GitHub organization</a>.</p>
     <p class="robot-rollcall"><strong>Wobby</strong> / Go1<br><strong>Widget</strong> / Go2 EDU<br><strong>Evan Wobbier</strong> / G1</p>
     <a class="start-button" href="{{ '/getting-started/' | relative_url }}">Read the lab guidelines →</a>
   </div>
