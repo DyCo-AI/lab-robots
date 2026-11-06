@@ -80,14 +80,15 @@ Record the robot identity, software revision, connection path, and observed
 result during each checkout. Update the owning runbook when hardware, firmware,
 networking, or launch procedures change.
 
-<figure class="lab-photo">
-  <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1200" height="800" loading="lazy" decoding="async">
-  <figcaption>Hands-on robot development in the DyCo-AI Lab at Clemson University.</figcaption>
-</figure>
+## Lab highlights
 
-## Wobby Walkers at ICRA 2023
-
-<figure class="lab-photo">
-  <img src="{{ '/assets/icra-qrc-london-2023.png' | relative_url }}" alt="Participants and quadruped robots gathered around the ICRA 2023 Quadruped Robot Challenge arena in London." width="853" height="619" loading="lazy" decoding="async">
-  <figcaption>Teams and robots at the ICRA 2023 Quadruped Robot Challenge in London. Wobby Walkers placed sixth overall in the final round. <a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch the challenge run</a> or <a href="https://ieeexplore.ieee.org/document/10255505">read the report</a>.</figcaption>
-</figure>
+<div class="lab-gallery">
+  <figure class="lab-photo">
+    <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1200" height="800" loading="lazy" decoding="async">
+    <figcaption><strong>Robot development at Clemson.</strong> Hands-on work in the DyCo-AI Lab.</figcaption>
+  </figure>
+  <figure class="lab-photo">
+    <img src="{{ '/assets/icra-qrc-london-2023.png' | relative_url }}" alt="Participants and quadruped robots at the ICRA 2023 Quadruped Robot Challenge in London, with Wobby identified in the arena." width="902" height="641" loading="lazy" decoding="async">
+    <figcaption><strong>Wobby Walkers at ICRA 2023.</strong> Sixth overall in the final round. <a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch the run</a> or <a href="https://ieeexplore.ieee.org/document/10255505">read the report</a>.</figcaption>
+  </figure>
+</div>
