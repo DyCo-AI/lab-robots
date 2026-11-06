@@ -10,7 +10,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
     <h1>Connect, inspect, and maintain the lab robots.</h1>
     <p class="lead">Robot-specific startup, networking, ROS, sensor, diagnostics, and maintenance guides for the DyCo-AI Lab.</p>
     <p class="robot-rollcall"><strong>Wobby</strong> / Go1<br><strong>Widget</strong> / Go2 EDU<br><strong>Evan Wobbier</strong> / G1</p>
-    <a class="start-button" href="{{ '/getting-started/' | relative_url }}">Start a robot checkout →</a>
+    <a class="start-button" href="{{ '/getting-started/' | relative_url }}">Read the lab guidelines →</a>
   </div>
   <figure class="hero-media">
     <img src="{{ '/assets/lab-robots-showcase.gif' | relative_url }}" alt="Looping lab showcase of Widget, the Go2, and Wobby, the Go1, in front of Evan Wobbier, the G1 humanoid." width="320" height="568" fetchpriority="high">
@@ -56,7 +56,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
 
 ## New to the robots?
 
-1. Read [First lab session]({{ '/getting-started/' | relative_url }}) for access, preparation, and the supervised first checkout.
+1. Read the [lab guidelines]({{ '/getting-started/' | relative_url }}) for professional conduct, equipment care, safety, and reproducible research practices.
 2. Choose the robot and connection path that match your experiment.
 3. Follow the linked code repository for installation and detailed operation.
 4. Record what actually worked on your assigned unit before extending the example.

@@ -3,9 +3,9 @@
     - title: Welcome
       url: /
       keywords: overview robots handbook
-    - title: First lab session
+    - title: Lab guidelines
       url: /getting-started/
-      keywords: safety credentials access prerequisites
+      keywords: safety conduct batteries reproducibility github hugging face contacts
 - title: Wobby / Go1
   items:
     - title: Go1 first connection

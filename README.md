@@ -15,9 +15,9 @@ inspect its sensors, and build on a maintained example.
   <br><em>Meet Wobby (Go1), Widget (Go2 EDU), and Evan Wobbier (G1).</em>
 </p>
 
-## Start your first lab session
+## Start with the lab guidelines
 
-1. Read [First lab session](https://dyco-ai.github.io/lab-robots/getting-started/) for access, preparation, and the supervised first checkout.
+1. Read the [lab guidelines](https://dyco-ai.github.io/lab-robots/getting-started/) for professional conduct, equipment care, safety, and reproducible research practices.
 2. Choose a robot and connection path below, then follow its maintained code repository.
 3. Start with network and read-only feedback, record what works on your assigned unit, and extend the example with the instructor.
 
