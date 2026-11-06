@@ -105,8 +105,8 @@ onboard computer:
 
 | Role | Contact |
 | --- | --- |
-| Faculty lead | **Umesh Vaidya** — [uvaidya@clemson.edu](mailto:uvaidya@clemson.edu) |
-| Technician Lab Manager | **Austin Breazeale** — [breazea@clemson.edu](mailto:breazea@clemson.edu) |
+| Faculty lead | **Dr. Umesh Vaidya** — [uvaidya@clemson.edu](mailto:uvaidya@clemson.edu) |
+| Mechanical Engineering Laboratory Manager | **Austin Breazeale** — [breazea@clemson.edu](mailto:breazea@clemson.edu) |
 
 Ask before guessing when equipment, permissions, or safety procedures are
 unclear. Then have fun, build ambitious systems, and leave a trail that makes
