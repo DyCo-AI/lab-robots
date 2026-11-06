@@ -14,7 +14,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
   </div>
   <figure class="hero-media">
     <img src="{{ '/assets/lab-robots-showcase.gif' | relative_url }}" alt="Looping lab showcase of Widget, the Go2, and Wobby, the Go1, in front of Evan Wobbier, the G1 humanoid." width="320" height="568" fetchpriority="high">
-    <figcaption>Hi from Wobby, Widget, and Evan Wobbier.</figcaption>
+    <figcaption>Meet Wobby, Widget, and Evan Wobbier at Clemson.</figcaption>
   </figure>
 </div>
 
