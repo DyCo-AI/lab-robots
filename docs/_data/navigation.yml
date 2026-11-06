@@ -8,8 +8,11 @@
       keywords: safety conduct batteries reproducibility github hugging face contacts
 - title: Wobby / Go1
   items:
-    - title: Go1 first connection
+    - title: Go1 overview
       url: /go1/
+      keywords: wobby quadruped hardware overview ros1 legacy
+    - title: Go1 first connection
+      url: /go1/connection/
       keywords: wobby quadruped ethernet ssh nano xavier ros1 legacy
 - title: Widget / Go2 EDU
   items:

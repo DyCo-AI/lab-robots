@@ -1,6 +1,14 @@
 document.querySelectorAll('a[href]').forEach(link => {
   const href = link.getAttribute('href').trim();
   if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+
+  const destination = new URL(link.href, window.location.href);
+  if (destination.origin === window.location.origin) {
+    link.removeAttribute('target');
+    link.removeAttribute('rel');
+    return;
+  }
+
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
 });

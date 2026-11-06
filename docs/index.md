@@ -67,7 +67,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
 | --- | --- |
 | Connect to the Go2 Jetson and use ROS 2 for state, bounded velocity requests, and bags | [Go2 Ethernet / ROS 2]({{ '/go2/ros/' | relative_url }}) |
 | Inspect the G1 body, hands, and sensors from Ubuntu | [G1 ROS 2]({{ '/g1/ros/' | relative_url }}) |
-| Connect to Go1 over Ethernet and inspect its onboard computers | [Go1 first connection]({{ '/go1/' | relative_url }}) |
+| Connect to Go1 over Ethernet and inspect its onboard computers | [Go1 first connection]({{ '/go1/connection/' | relative_url }}) |
 
 This handbook is the lab's entry point. Code and full runbooks remain in their
 own repositories so improvements carry forward without duplicated instructions.
