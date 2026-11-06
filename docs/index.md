@@ -38,7 +38,8 @@ description: "Choose a robot and find its connection, sensor, and development gu
     <div class="robot-card-copy">
       <p>Widget is Wobby's younger brother: a Unitree Go2 EDU quadruped with newer onboard sensing and computing.</p>
       <p>The lab uses Widget for Ethernet and Jetson-based ROS 2 development, state inspection, bounded motion tests, and data recording.</p>
-      <p class="robot-links"><a href="{{ '/go2/' | relative_url }}">Open the Go2 guide</a></p>
+      <p>Widget also supports gesture navigation over WebRTC for the <strong>CI: Mission Control</strong> course.</p>
+      <p class="robot-links"><a href="https://dyco-ai.github.io/go1_gesture_tracking/">CI: Mission Control</a><a href="https://github.com/sriram-2502/go2-gesture-nav">Go2 Gesture Navigation</a></p>
     </div>
   </article>
   <article class="card robot-card">
