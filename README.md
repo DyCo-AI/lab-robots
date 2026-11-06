@@ -25,7 +25,7 @@ inspect its sensors, and build on a maintained example.
 | --- | --- |
 | **Widget / Go2 EDU** | [Windows and WebRTC](https://dyco-ai.github.io/lab-robots/go2/webrtc/) for camera/voxels and high-level Python applications; [Ethernet and ROS 2](https://dyco-ai.github.io/lab-robots/go2/ros/) for onboard Jetson development and bags |
 | **Evan Wobbier / G1** | [ROS 2 first connection](https://dyco-ai.github.io/lab-robots/g1/ros/) and [sensor diagnostics](https://dyco-ai.github.io/lab-robots/g1/sensors/) on Ubuntu with Rerun |
-| **Wobby / Go1** | [Existing Go1 resources](https://dyco-ai.github.io/lab-robots/go1/); setup notes currently require lab access |
+| **Wobby / Go1** | [Ethernet and SSH first connection](https://dyco-ai.github.io/lab-robots/go1/), with the legacy ROS 1 boundary and private historical notes clearly separated |
 
 ## Code and detailed runbooks
 
@@ -38,7 +38,7 @@ in independent repositories:
 | Go2 Ethernet / Jetson / ROS 2 | [go2-ros](https://github.com/DyCo-AI/go2-ros) |
 | Go2 Windows 11 / Wi-Fi / Basic WebRTC | [go2-webRTC](https://github.com/DyCo-AI/go2-webRTC) |
 | G1 Ubuntu / ROS 2 / diagnostics | [g1-ros2](https://github.com/DyCo-AI/g1-ros2) |
-| Go1 | [go1_info](https://github.com/DyCo-AI/go1_info) — existing setup notes; requires lab repository access |
+| Go1 legacy ROS 1, camera, and hardware notes | [go1_info](https://github.com/DyCo-AI/go1_info) — private historical source material used by the public Go1 first-connection guide |
 
 For the Clemson Creative Inquiry learning path, see
 [Courses and projects](https://dyco-ai.github.io/lab-robots/learning/), the

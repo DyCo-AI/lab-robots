@@ -1,20 +1,163 @@
 ---
 layout: default
-title: "Go1 status"
-description: "Find existing Go1 references while the unified onboarding path is prepared."
+title: "Go1 first connection"
+description: "Connect a Linux host to the lab Go1, verify Ethernet and SSH, and understand the legacy ROS 1 stack."
 ---
 
 # Wobby: Unitree Go1
 
 **Wobby** is the lab's Go1 quadruped.
 
-Go1 remains part of the lab's robot collection. Its unified handbook onboarding
-is pending; use the existing material with the instructor and check its hardware
-and software assumptions before running it.
+This page is the safe first-session path extracted from the lab's historical
+[`go1_info`](https://github.com/DyCo-AI/go1_info) notes. It covers physical
+preparation, wired reachability, and read-only inspection. The controller and
+planning notes in `go1_info` are older ROS 1 experiments; they are not an
+approved first-session motion procedure.
 
-- **[DyCo-AI/go1_info](https://github.com/DyCo-AI/go1_info): existing Go1 setup notes and the temporary starting point for Go1 onboarding.** The repository is currently private; request access from the lab maintainer if GitHub shows a 404 or an access prompt.
-- [Simulation and CI learning path]({{ '/learning/' | relative_url }}): student-facing Python and gesture-navigation exercises.
+Vendor reference: [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html).
 
-The current CI hardware route uses Go2 WebRTC. The older Go1/external Jetson/ZED
-hardware route needs separate verification and is under development. Do not
-reuse the Go2 ROS messages, SDK interface, IP addresses, or credentials by assumption.
+> Work with a trained lab member. Put the Go1 on a clear, level surface, keep
+> its paired remote available, and learn how to return it to damping before
+> enabling any program that can publish commands.
+
+## What you need
+
+- A Linux computer with an Ethernet port or USB-to-Ethernet adapter.
+- A direct Ethernet cable to the Go1 development port.
+- The current host CIDR, robot IP, onboard SSH IP, and SSH credential from the
+  lab maintainer. Per-robot network inventory and credentials are not stored on
+  this public site.
+- Access to [`DyCo-AI/go1_info`](https://github.com/DyCo-AI/go1_info) if you
+  need the historical ROS 1, camera, or competition notes.
+
+## 1. Power on and enter damping
+
+Use a clear, level floor with no person, cable, or object inside the leg
+workspace. The archived Unitree quick guide records this startup sequence:
+
+1. Install a charged battery and place all four limbs flat on the ground.
+2. On the battery, press the power button once, then press it again and hold.
+3. Move clear. The Go1 starts and may stand automatically. Wait about one
+   minute for the head light to flash before using the remote.
+4. Power the paired remote with one short press followed by one long press.
+5. With the trained operator ready, press `L2 + B` to place the robot in
+   **damping / low-power mode**. The robot lowers itself, so keep hands and feet
+   outside its workspace.
+
+For this first checkout, do not press `Start` to unlock walking or fast-run
+control. The quick guide records `L2 + A` as the lock/stand/lie control, but
+students should not explore controller combinations without the trained
+operator.
+
+## 2. Connect Ethernet
+
+Connect the host directly to Wobby. Identify the interface that changes state
+when the cable is inserted:
+
+```bash
+ip -brief link
+nmcli device status
+```
+
+Set all three values for the assigned Go1 before running the network commands:
+
+```bash
+export GO1_INTERFACE=enp3s0
+export GO1_HOST_CIDR=REPLACE_WITH_LAB_HOST_CIDR
+export GO1_ROBOT_IP=REPLACE_WITH_LAB_ROBOT_IP
+
+sudo ip address replace "${GO1_HOST_CIDR}" dev "${GO1_INTERFACE}"
+sudo ip link set "${GO1_INTERFACE}" up
+ip -4 address show dev "${GO1_INTERFACE}"
+```
+
+This `ip` configuration is temporary and disappears after the interface or
+computer restarts. The host and robot must have different addresses.
+
+## 3. Verify the robot network
+
+Use the issued robot/controller address for the reachability check:
+
+```bash
+ping -c 4 "${GO1_ROBOT_IP}"
+```
+
+Continue only if replies arrive with `0% packet loss`. If ping fails, recheck
+the cable, interface name, host address, and robot power before changing
+software.
+
+## 4. Inspect an onboard computer over SSH
+
+The Go1 has separate robot-control and onboard-computer endpoints. The current
+onboard SSH address and credential are private lab inventory: obtain both from
+the instructor for the assigned unit. Do not assume the robot/controller
+address is also the SSH endpoint.
+
+Set the issued address for the current terminal, then connect:
+
+```bash
+export GO1_SSH_IP=REPLACE_WITH_LAB_SSH_IP
+ssh unitree@"${GO1_SSH_IP}"
+```
+
+After login, identify the machine before running anything:
+
+```bash
+hostname
+uname -a
+cat /etc/os-release
+ip -brief address
+```
+
+Exit with `exit`. A successful SSH login is the end of the first checkout; it
+does not authorize starting a controller.
+
+## 5. Understand the software boundary
+
+The archived Go1 workflow predates the lab's current Go2 and G1 ROS 2 stacks.
+It uses Unitree Legged SDK, `unitree_ros_to_real`, and ROS 1-era packages. The
+historical custom controller also expects:
+
+```bash
+export ROBOT_TYPE=go1
+```
+
+Do not launch `legged_unitree_hw`, switch ROS controllers, publish `cmd_vel`,
+stop vendor camera processes, or update firmware during onboarding. Those
+actions can move the robot or disrupt stock services and require a separately
+reviewed runbook for Wobby's current firmware and hardware.
+
+## First-session pass criteria
+
+- The Go1 is stable in damping mode with the paired remote available.
+- The host shows the instructor-issued CIDR on the correct Ethernet interface.
+- `ping -c 4 "${GO1_ROBOT_IP}"` reports `0% packet loss`.
+- The instructor-issued SSH endpoint opens with the private lab credential.
+- The student records the endpoint, hostname, OS, kernel, and current
+  `go1_info` commit without starting a motion or camera process.
+
+## Shut down
+
+Disconnect SSH with `exit`. With the trained operator, put the robot in its
+stable proning state before switching it off. The archived quick guide specifies
+one short battery-button press followed by one long press for shutdown; the
+remote uses the same short-then-long sequence. Do not power off while the Go1
+is standing or while a controller process is active.
+
+## Next steps
+
+- Review the private [`go1_info`](https://github.com/DyCo-AI/go1_info)
+  repository with its maintainer before using the legacy ROS 1 stack.
+- Use [Courses and projects]({{ '/learning/' | relative_url }}) for simulation,
+  Python, MediaPipe, and gesture-navigation exercises before hardware control.
+- For new high-level hardware projects, use the maintained Go2 WebRTC path
+  unless the experiment specifically requires Go1.
+
+## Still to validate on Wobby
+
+- Verify and record the current onboard-computer inventory in the private lab
+  record.
+- Record Wobby's firmware, Go1 hardware revision, and paired-remote procedure.
+- Replace the historical controller notes with a bounded, reviewed read-only
+  state test and a separate motion acceptance procedure.
+- Qualify camera access without killing stock processes.

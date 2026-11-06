@@ -6,6 +6,11 @@
     - title: First lab session
       url: /getting-started/
       keywords: safety credentials access prerequisites
+- title: Wobby / Go1
+  items:
+    - title: Go1 first connection
+      url: /go1/
+      keywords: wobby quadruped ethernet ssh nano xavier ros1 legacy
 - title: Widget / Go2 EDU
   items:
     - title: Choose your Go2 path
@@ -30,9 +35,6 @@
       keywords: rerun camera lidar imu dex3 hands recording
 - title: Lab resources
   items:
-    - title: Wobby / Go1
-      url: /go1/
-      keywords: wobby quadruped legacy development
     - title: Courses and projects
       url: /learning/
       keywords: creative inquiry ci gestures mediapipe simulation

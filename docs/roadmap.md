@@ -11,7 +11,10 @@ description: "Track onboarding, private vault migration, per-robot qualification
 - [x] Separate the public handbook from executable starter repositories.
 - [x] Add Go2 ROS/WebRTC and G1 ROS/sensor entry points.
 - [ ] Have a new lab member follow each path and record missing prerequisites.
-- [ ] Add a reviewed Go1 onboarding path and hardware inventory.
+- [x] Add an initial Go1 Ethernet, ping, SSH, and hardware-inventory path from
+  the historical lab notes.
+- [ ] Verify the current Go1 onboard endpoints, firmware, remote procedure, and
+  read-only state interface on Wobby.
 - [ ] Record per-unit firmware/software versions and the date of each hardware checkout.
 - [ ] Assign a primary maintainer and backup for each robot and repository.
 

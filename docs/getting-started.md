@@ -17,15 +17,18 @@ description: "Prepare your computer, request access, and complete a supervised f
 
 | Path | Your computer | Robot-side computer / interface |
 | --- | --- | --- |
+| Go1 legacy development | Linux host configures the privately issued host CIDR and uses SSH | Direct Ethernet reaches the robot controller and a privately issued onboard SSH endpoint |
 | Go2 ROS | Windows 11 provides SSH, editor, Git | Python and ROS 2 run on the onboard Jetson over Ethernet |
 | Go2 WebRTC | Windows 11 runs the local browser UI or Python client | Direct robot Wi-Fi carries WebRTC state, video, and high-level commands |
 | G1 ROS | Ubuntu 22.04 runs ROS 2 Humble and Rerun | Ethernet connects to the robot LAN; optional SSH accesses the onboard Jetson separately |
 
 ## First checkout
 
-Start with network and read-only feedback. On Go2, confirm the selected robot,
-fresh state, and camera/voxels where available. On G1, use the supported gantry
-setup and read-only ROS/Rerun runbook. G1 diagnostics do not require a motion test.
+Start with network and read-only feedback. On Go1, complete the Ethernet, ping,
+and SSH inventory without launching the historical controller stack. On Go2,
+confirm the selected robot, fresh state, and camera/voxels where available. On
+G1, use the supported gantry setup and read-only ROS/Rerun runbook. G1
+diagnostics do not require a motion test.
 
 Move to motion only after the instructor has completed the robot-specific
 preparation and approved a bounded test. Keep one command source active, clear
@@ -40,4 +43,5 @@ videos, and datasets on local or approved lab storage, outside Git. Share a smal
 reviewed image or clip and a concise report when needed. Check outputs for
 credentials before publishing.
 
-Continue to [Go2]({{ '/go2/' | relative_url }}) or [G1]({{ '/g1/' | relative_url }}).
+Continue to [Go1]({{ '/go1/' | relative_url }}),
+[Go2]({{ '/go2/' | relative_url }}), or [G1]({{ '/g1/' | relative_url }}).

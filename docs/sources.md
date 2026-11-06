@@ -20,6 +20,7 @@ It is used for the handbook sidebar, mobile header, and browser tab icon.
 - [DyCo-AI/go2-ros](https://github.com/DyCo-AI/go2-ros): Ethernet/Jetson setup, ROS baseline, annotated lab photograph, and velocity GIF.
 - [DyCo-AI/go2-webRTC](https://github.com/DyCo-AI/go2-webRTC): Windows Basic UI, Python examples, backflip GIF, and upstream screenshot attribution.
 - [DyCo-AI/g1-ros2](https://github.com/DyCo-AI/g1-ros2): G1 profile, network addresses, ROS/Rerun status, lab robot photograph, and combined diagnostics screenshot.
+- [DyCo-AI/go1_info](https://github.com/DyCo-AI/go1_info): private historical Go1 Ethernet, onboard-computer, ROS 1, camera, and competition notes. The handbook publishes a credential-free first-connection procedure derived from these notes.
 
 The landing animation, `assets/lab-robots-showcase.gif`, is an optimized looping
 export of the instructor-supplied `robot_showcase.mp4`. It shows Wobby (Go1),
@@ -46,6 +47,7 @@ context and notices; no external media ownership is claimed here.
 ## Official development references
 
 - [Unitree G1 developer documentation](https://support.unitree.com/home/en/G1_developer/about_G1).
+- [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html).
 - [Unitree ROS 2](https://github.com/unitreerobotics/unitree_ros2).
 - [Unitree SDK2](https://github.com/unitreerobotics/unitree_sdk2).
 - [Unitree SDK2 Python](https://github.com/unitreerobotics/unitree_sdk2_python).

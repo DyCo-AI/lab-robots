@@ -18,10 +18,10 @@ description: "Choose a robot and find its connection, sensor, and development gu
   </figure>
 </div>
 
-<div class="cards">
-  <a class="card" href="{{ '/go2/' | relative_url }}"><strong>Widget / Go2 EDU</strong><span>Quadruped · Windows 11 + WebRTC, or Ethernet + Jetson + ROS 2.</span></a>
-  <a class="card" href="{{ '/g1/' | relative_url }}"><strong>Evan Wobbier / G1</strong><span>Ubuntu + ROS 2 · Rerun, camera, LiDAR, IMU, and Dex3 diagnostics.</span></a>
-  <a class="card" href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1</strong><span>Existing lab setup notes · Request access to the Go1 reference repository.</span></a>
+<div class="cards robot-cards">
+  <a class="card" href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1</strong><span>Connect a Linux host over Ethernet, verify the robot and onboard computers, then review the legacy ROS 1 development stack.</span></a>
+  <a class="card" href="{{ '/go2/' | relative_url }}"><strong>Widget / Go2 EDU</strong><span>Choose Windows 11 + WebRTC for high-level applications, or Ethernet + Jetson + ROS 2 for robot-side work.</span></a>
+  <a class="card" href="{{ '/g1/' | relative_url }}"><strong>Evan Wobbier / G1</strong><span>Use Ubuntu 22.04 + ROS 2 Humble to inspect the live model, camera, LiDAR, IMUs, and Dex3 hands in Rerun.</span></a>
 </div>
 
 ## New to the lab?
@@ -39,11 +39,11 @@ description: "Choose a robot and find its connection, sensor, and development gu
 | SSH from Windows into the Go2 Jetson and use ROS 2 for velocity requests and bags | [Go2 Ethernet / ROS 2]({{ '/go2/ros/' | relative_url }}) |
 | Inspect the G1 body, hands, and sensors from Ubuntu | [G1 ROS 2]({{ '/g1/ros/' | relative_url }}) |
 | Build gesture navigation after simulation exercises | [Courses and projects]({{ '/learning/' | relative_url }}) |
-| Find existing Go1 work | [Go1 status]({{ '/go1/' | relative_url }}) |
+| Connect to Go1 over Ethernet and inspect its onboard computers | [Go1 first connection]({{ '/go1/' | relative_url }}) |
 
 This handbook is the lab's entry point. Code and full runbooks remain in their
 own repositories so improvements carry forward without duplicated instructions.
-Feature status here reflects those repositories, reviewed **November 4, 2026**;
+Feature status here reflects those repositories, reviewed **November 6, 2026**;
 it does not substitute for a checkout on the assigned hardware.
 
 ## Learning together in the lab
