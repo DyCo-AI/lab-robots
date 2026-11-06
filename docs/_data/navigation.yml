@@ -32,12 +32,12 @@
       keywords: rerun camera lidar imu dex3 hands recording
 - title: Lab resources
   items:
+    - title: Courses and projects
+      url: /learning/
+      keywords: mission control data driven learning safe navigation koopman
     - title: Troubleshooting
       url: /troubleshooting/
       keywords: connection network authentication problems
-    - title: Roadmap and handover
+    - title: Roadmap
       url: /roadmap/
-      keywords: todo maintenance passwords proton pass
-    - title: Sources and media
-      url: /sources/
-      keywords: attribution credits references
+      keywords: todo validation maintenance documentation

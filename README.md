@@ -68,5 +68,4 @@ build on. This handbook helps each new group carry that work forward.
 ![Hands-on robot development with members of the DyCo-AI Lab at Clemson University](docs/assets/dyco-ai-lab.webp)
 
 Developed by [Sriram Krishnamoorthy](https://github.com/sriram-2502) for lab
-onboarding and handover. Lab-authored material uses the existing [MIT license](LICENSE).
-See [sources](docs/sources.md) for linked media and upstream attribution.
+onboarding and maintenance. Lab-authored material uses the existing [MIT license](LICENSE).

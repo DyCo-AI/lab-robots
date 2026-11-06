@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Roadmap and handover"
-description: "Track onboarding, private vault migration, per-robot qualification, and long-term maintenance."
+title: "Roadmap"
+description: "Track robot onboarding, documentation, per-robot qualification, and maintenance tasks."
 ---
 
-# Keep the lab usable after handover
+# Robot documentation roadmap
 
 ## Handbook
 
@@ -34,4 +34,4 @@ service-tag/password inventories are excluded from this public handbook.
 - **G1:** Hardware acceptance for bounded motion, readiness reports, RealSense integration, and synchronized capture/replay. Track gates in [g1-ros2 pilots](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/pilots/README.md).
 
 Keep detailed implementation TODOs in the owning code repository. This page
-tracks the lab-wide onboarding and handover work.
+tracks lab-wide robot documentation, validation, and maintenance work.
