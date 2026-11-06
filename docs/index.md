@@ -26,7 +26,7 @@ description: "Choose a robot and find its connection, sensor, and development gu
     </div>
     <div class="robot-card-copy">
       <p>Wobby is a Unitree Go1: a 12-actuator quadruped used in the lab for legged locomotion, perception, and control research.</p>
-      <p>In 2023, Wobby traveled to the ICRA Quadruped Robot Challenge with team <strong>Wobby Walkers</strong>. The team name stuck, and so did Wobby's name.</p>
+      <p>In 2023, Wobby traveled to the ICRA Quadruped Robot Challenge with team <strong>Wobby Walkers</strong>, placing sixth overall in the final round. The team name stuck, and so did Wobby's name.</p>
       <p class="robot-links"><a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch Wobby at ICRA QRC</a><a href="https://ieeexplore.ieee.org/document/10255505">Read the challenge report</a><a href="{{ '/go1/' | relative_url }}">Open the Go1 guide</a></p>
     </div>
   </article>
@@ -83,4 +83,11 @@ networking, or launch procedures change.
 <figure class="lab-photo">
   <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Hands-on robot development in the DyCo-AI Lab at Clemson University.</figcaption>
+</figure>
+
+## Wobby Walkers at ICRA 2023
+
+<figure class="lab-photo">
+  <img src="{{ '/assets/icra-qrc-london-2023.png' | relative_url }}" alt="Participants and quadruped robots gathered around the ICRA 2023 Quadruped Robot Challenge arena in London." width="853" height="619" loading="lazy" decoding="async">
+  <figcaption>Teams and robots at the ICRA 2023 Quadruped Robot Challenge in London. Wobby Walkers placed sixth overall in the final round. <a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch the challenge run</a> or <a href="https://ieeexplore.ieee.org/document/10255505">read the report</a>.</figcaption>
 </figure>
