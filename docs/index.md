@@ -85,7 +85,7 @@ networking, or launch procedures change.
 <div class="lab-gallery">
   <figure class="lab-photo">
     <img src="{{ '/assets/dyco-ai-lab.webp' | relative_url }}" alt="DyCo-AI lab members working together around quadruped robots in the Clemson robotics lab." width="1200" height="800" loading="lazy" decoding="async">
-    <figcaption><strong>Robot development at Clemson.</strong> Hands-on work in the DyCo-AI Lab.</figcaption>
+    <figcaption><strong>NSF-funded robotics research, 2025.</strong> Addressing the curse of dimensionality in robotics. <a href="https://news.clemson.edu/breaking-the-curse-clemson-professor-tackles-a-barrier-to-autonomous-robots/">Read the Clemson News feature</a>.</figcaption>
   </figure>
   <figure class="lab-photo">
     <img src="{{ '/assets/icra-qrc-london-2023.png' | relative_url }}" alt="Participants and quadruped robots at the ICRA 2023 Quadruped Robot Challenge in London, with Wobby identified in the arena." width="902" height="641" loading="lazy" decoding="async">
