@@ -2,7 +2,7 @@ title: DyCo-AI Lab Robots
 description: Robot onboarding and development guides for the DyCo-AI Lab at Clemson University.
 url: https://dyco-ai.github.io
 baseurl: /lab-robots
-asset_version: "2026-11-06-9"
+asset_version: "2026-11-06-10"
 markdown: kramdown
 highlighter: rouge
 kramdown:
