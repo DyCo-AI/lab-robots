@@ -1,3 +1,10 @@
+document.querySelectorAll('a[href]').forEach(link => {
+  const href = link.getAttribute('href').trim();
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+});
+
 const finder = document.querySelector('#page-finder');
 finder.addEventListener('input', () => {
   const words = finder.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
