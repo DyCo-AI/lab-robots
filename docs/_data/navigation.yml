@@ -6,9 +6,9 @@
     - title: Lab guidelines
       url: /getting-started/
       keywords: safety conduct batteries reproducibility github hugging face contacts
-- title: Wobby / Go1
+- title: Wobby / Go1 EDU
   items:
-    - title: Go1 overview
+    - title: Go1 EDU overview
       url: /go1/
       keywords: wobby quadruped hardware overview ros1 legacy
     - title: Go1 first connection

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Go1 overview"
-description: "Meet the lab's Unitree Go1 and find its connection, hardware, and legacy development resources."
+title: "Go1 EDU overview"
+description: "Meet the lab's Unitree Go1 EDU and find its connection, hardware, and legacy development resources."
 ---
 
 <p class="eyebrow">Quadruped / Read-only checkout first</p>
-# Wobby: Unitree Go1
+# Wobby: Unitree Go1 EDU
 
-**Wobby** is the lab's Unitree Go1 quadruped. It joined the lab in 2022 and
+**Wobby** is the lab's Unitree Go1 EDU quadruped. It joined the lab in 2022 and
 competed with team **Wobby Walkers** at the 2023 ICRA Quadruped Robot
 Challenge, placing sixth overall in the final round.
 
@@ -25,7 +25,7 @@ requires a separately reviewed motion runbook.
 
 | Component | Lab profile |
 | --- | --- |
-| Body | Unitree Go1, 12 actuated leg joints |
+| Body | Unitree Go1 EDU, 12 actuated leg joints |
 | Primary development path | Direct Ethernet from a Linux host |
 | Software boundary | Historical Unitree Legged SDK and ROS 1 experiments |
 | Optional payloads | ZED2i camera and Jetson AGX configurations; use only under an approved runbook |

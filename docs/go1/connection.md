@@ -4,9 +4,9 @@ title: "Go1 first connection"
 description: "Connect a Linux host to the lab Go1, verify Ethernet and SSH, and understand the legacy ROS 1 stack."
 ---
 
-# Wobby: Unitree Go1
+# Wobby: Unitree Go1 EDU
 
-**Wobby** is the lab's Go1 quadruped.
+**Wobby** is the lab's Go1 EDU quadruped.
 
 This page is the safe first-session path extracted from the lab's historical
 [`go1_info`](https://github.com/DyCo-AI/go1_info) notes. It covers physical

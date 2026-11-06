@@ -21,12 +21,12 @@ description: "Choose a robot and find its connection, sensor, and development gu
 <div class="cards robot-cards">
   <article class="card robot-card">
     <div class="robot-card-heading">
-      <a href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1</strong></a>
+      <a href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1 EDU</strong></a>
       <span class="robot-spawned">Spawned in 2022</span>
       <span class="robot-faculty">Dr. Umesh Vaidya</span>
     </div>
     <div class="robot-card-copy">
-      <p>Wobby is a Unitree Go1: a 12-actuator quadruped used in the lab for legged locomotion, perception, and control research.</p>
+      <p>Wobby is a Unitree Go1 EDU: a 12-actuator quadruped used in the lab for legged locomotion, perception, and control research.</p>
       <p>In 2023, Wobby traveled to the ICRA Quadruped Robot Challenge with team <strong>Wobby Walkers</strong>, placing sixth overall in the final round. The team name stuck, and so did Wobby's name.</p>
       <p class="robot-links"><a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch Wobby at ICRA QRC</a><a href="https://ieeexplore.ieee.org/document/10255505">Read the challenge report</a><a href="{{ '/go1/' | relative_url }}">Open the Go1 guide</a></p>
     </div>

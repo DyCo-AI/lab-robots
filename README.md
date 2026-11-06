@@ -25,7 +25,7 @@ inspect its sensors, and build on a maintained example.
 | --- | --- |
 | **Widget / Go2 EDU** | [Ethernet and ROS 2](https://dyco-ai.github.io/lab-robots/go2/ros/) for onboard Jetson access, state inspection, bounded commands, and bags |
 | **Evan Wobbier / G1** | [ROS 2 first connection](https://dyco-ai.github.io/lab-robots/g1/ros/) and [sensor diagnostics](https://dyco-ai.github.io/lab-robots/g1/sensors/) on Ubuntu with Rerun |
-| **Wobby / Go1** | [Ethernet and SSH first connection](https://dyco-ai.github.io/lab-robots/go1/), with the legacy ROS 1 boundary and private historical notes clearly separated |
+| **Wobby / Go1 EDU** | [Go1 EDU overview](https://dyco-ai.github.io/lab-robots/go1/) and [Ethernet and SSH first connection](https://dyco-ai.github.io/lab-robots/go1/connection/), with the legacy ROS 1 boundary and private historical notes clearly separated |
 
 ## Code and detailed runbooks
 
