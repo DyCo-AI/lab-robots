@@ -19,9 +19,39 @@ description: "Choose a robot and find its connection, sensor, and development gu
 </div>
 
 <div class="cards robot-cards">
-  <a class="card" href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1</strong><span>Connect a Linux host over Ethernet, verify the robot and onboard computers, then review the legacy ROS 1 development stack.</span></a>
-  <a class="card" href="{{ '/go2/' | relative_url }}"><strong>Widget / Go2 EDU</strong><span>Connect over Ethernet, access the onboard Jetson, verify ROS 2, and inspect the robot before running a bounded command.</span></a>
-  <a class="card" href="{{ '/g1/' | relative_url }}"><strong>Evan Wobbier / G1</strong><span>Use Ubuntu 22.04 + ROS 2 Humble to inspect the live model, camera, LiDAR, IMUs, and Dex3 hands in Rerun.</span></a>
+  <article class="card robot-card">
+    <div class="robot-card-heading">
+      <a href="{{ '/go1/' | relative_url }}"><strong>Wobby / Go1</strong></a>
+      <span class="robot-spawned">Spawned in 2022</span>
+    </div>
+    <div class="robot-card-copy">
+      <p>Wobby is a Unitree Go1: a 12-actuator quadruped used in the lab for legged locomotion, perception, and control research.</p>
+      <p>In 2023, Wobby traveled to the ICRA Quadruped Robot Challenge with team <strong>Wobby Walkers</strong>. The team name stuck, and so did Wobby's name.</p>
+      <p class="robot-links"><a href="https://www.youtube.com/watch?v=Vqp2fmUyKt8&amp;list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&amp;index=6">Watch Wobby at ICRA QRC</a><a href="https://ieeexplore.ieee.org/document/10255505">Read the challenge report</a><a href="{{ '/go1/' | relative_url }}">Open the Go1 guide</a></p>
+    </div>
+  </article>
+  <article class="card robot-card">
+    <div class="robot-card-heading">
+      <a href="{{ '/go2/' | relative_url }}"><strong>Widget / Go2 EDU</strong></a>
+      <span class="robot-spawned">Spawned in 2026</span>
+    </div>
+    <div class="robot-card-copy">
+      <p>Widget is Wobby's younger brother: a Unitree Go2 EDU quadruped with newer onboard sensing and computing.</p>
+      <p>The lab uses Widget for Ethernet and Jetson-based ROS 2 development, state inspection, bounded motion tests, and data recording.</p>
+      <p class="robot-links"><a href="{{ '/go2/' | relative_url }}">Open the Go2 guide</a></p>
+    </div>
+  </article>
+  <article class="card robot-card">
+    <div class="robot-card-heading">
+      <a href="{{ '/g1/' | relative_url }}"><strong>Evan Wobbier / G1</strong></a>
+      <span class="robot-spawned">Spawned in 2026</span>
+    </div>
+    <div class="robot-card-copy">
+      <p>Evan Wobbier is the tallest sibling: a Unitree G1 humanoid configured with 29 body degrees of freedom and left and right Dex3 tactile hands.</p>
+      <p>Its lab setup includes a Livox Mid360 LiDAR, front camera, IMUs, and an NVIDIA Jetson Orin NX, with ROS 2 and Rerun used for diagnostics.</p>
+      <p class="robot-links"><a href="{{ '/g1/' | relative_url }}">Open the G1 guide</a></p>
+    </div>
+  </article>
 </div>
 
 ## New to the robots?
