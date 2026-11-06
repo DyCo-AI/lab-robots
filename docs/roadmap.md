@@ -31,6 +31,9 @@ service-tag/password inventories are excluded from this public handbook.
 ## Robot development
 
 - **Go2 ROS:** Jetson Wi-Fi SSH, exact software inventory, and a separate host-PC RL deployment framework. Track implementation in [go2-ros](https://github.com/DyCo-AI/go2-ros).
+- **Go2 D1 arm:** Inventory the supplied arm, document power and software
+  interfaces, define its safe workspace, and qualify a bounded acceptance test
+  before student use.
 - **G1:** Hardware acceptance for bounded motion, readiness reports, RealSense integration, and synchronized capture/replay. Track gates in [g1-ros2 pilots](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/pilots/README.md).
 
 Keep detailed implementation TODOs in the owning code repository. This page

@@ -14,11 +14,34 @@ preparation, wired reachability, and read-only inspection. The controller and
 planning notes in `go1_info` are older ROS 1 experiments; they are not an
 approved first-session motion procedure.
 
-Vendor reference: [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html).
+## Reference documentation
+
+- [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html)
+- [Go1 operation guide](https://www.docs.quadruped.de/projects/go1/html/operation.html)
+- [Trossen Robotics Go1 documentation](https://docs.trossenrobotics.com/unitree_go1_docs/)
+- [Historical DyCo-AI Go1 notes](https://github.com/DyCo-AI/go1_info)
 
 > Work with a trained lab member. Put the Go1 on a clear, level surface, keep
 > its paired remote available, and learn how to return it to damping before
 > enabling any program that can publish commands.
+
+## Hardware and operating notes
+
+- Use **about 20 minutes** as a conservative lab planning estimate for battery
+  runtime. Actual runtime depends on gait, payload, compute load, battery age,
+  and condition.
+- Go1 has been robust in lab use, but a fall while Ethernet is connected can
+  load the cable and break the robot port. A Wi-Fi adapter avoids the tether but
+  can itself be damaged in a fall.
+- External ZED2i cameras, Jetson AGX computers, and their mounts substantially
+  increase the hardware exposed during a fall. Begin new controllers without
+  those payloads whenever the experiment permits.
+- Use an approved external power supply only while the robot is stationary,
+  stable, and supervised. Never run locomotion with a power tether attached.
+
+> **Replacement planning (reported August 2026):** Clemson's current purchase
+> order process does not permit direct Unitree replacement purchases. Verify
+> current policy and available spares with the lab manager before planning work.
 
 ## What you need
 

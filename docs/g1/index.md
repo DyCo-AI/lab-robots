@@ -9,6 +9,12 @@ description: "Discover the G1 lab configuration and the current ROS 2 diagnostic
 
 **Evan Wobbier** is the lab's G1 humanoid.
 
+The lab procurement record identifies this robot as a **G1 EDU Ultimate B**.
+Its current configuration has **29 body DOF** and left and right **Dex3-1
+hands**. Confirm the unit label, installed hardware, hip-clamp state, and active
+joint mask before commanding it; catalog names and controller configurations
+can differ.
+
 **[Open the g1-ros2 workspace](https://github.com/DyCo-AI/g1-ros2)**
 
 The current G1 entry point is a ROS 2 diagnostics workflow: connect an Ubuntu
@@ -31,6 +37,33 @@ are separate, explicitly enabled, and still awaiting hardware acceptance.
 
 The active joint model and command mask depend on the actual hardware and hip
 clamp state. Do not assume this profile applies to another G1 variant.
+
+## Operator and hardware notes
+
+- The lab has not observed a G1 crash as of November 2026. This is not evidence
+  that a new controller is safe: deploy incrementally and use the gantry for
+  startup and initial tests.
+- When the operator is not fully confident in a controller, a second trained
+  person must oversee the test and be ready to use the approved intervention
+  procedure. Do not attempt to catch a falling humanoid.
+- Use an approved external power supply only for stationary development with
+  the robot secured and the cable managed. Do not walk or run a motion test
+  while tethered to external power.
+- Use **about two hours** only as a lab planning estimate for battery runtime.
+  Actual runtime depends on payload, motion, compute load, and battery health.
+
+## Reference documentation
+
+- [Unitree G1 developer documentation](https://support.unitree.com/home/en/G1_developer)
+- [G1 hardware overview](https://docs.quadruped.de/projects/g1/html/g1_overview.html)
+- [Unitree Robotics repositories](https://github.com/unitreerobotics)
+- [DyCo-AI G1 ROS 2 workspace](https://github.com/DyCo-AI/g1-ros2)
+
+> **Replacement planning (reported August 2026):** Clemson's current purchase
+> order process does not permit direct Unitree replacement purchases. Verify
+> current policy and available spares with the lab manager before planning work;
+> do not assume a replacement battery, sensor, or actuator can be obtained
+> quickly.
 
 <div class="cards">
   <a class="card" href="{{ '/g1/ros/' | relative_url }}"><strong>First connection</strong><span>Install the Ubuntu host, identify the Ethernet interface, and check ROS discovery.</span></a>
