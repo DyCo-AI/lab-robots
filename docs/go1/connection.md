@@ -25,6 +25,12 @@ approved first-session motion procedure.
 > its paired remote available, and learn how to return it to damping before
 > enabling any program that can publish commands.
 
+Follow every session in this order:
+
+1. [Start the robot](#startup-procedure) and confirm damping mode.
+2. [Connect and inspect](#connection-and-inspection) without starting motion.
+3. [Shut down safely](#shutdown-procedure) before leaving the robot.
+
 ## Hardware and operating notes
 
 - Use **about 20 minutes** as a conservative lab planning estimate for battery
@@ -53,7 +59,7 @@ approved first-session motion procedure.
 - Access to [`DyCo-AI/go1_info`](https://github.com/DyCo-AI/go1_info) if you
   need the historical ROS 1, camera, or competition notes.
 
-## 1. Power on and enter damping
+## Startup procedure
 
 Use a clear, level floor with no person, cable, or object inside the leg
 workspace. The archived Unitree quick guide records this startup sequence:
@@ -72,7 +78,12 @@ control. The quick guide records `L2 + A` as the lock/stand/lie control, but
 students should not explore controller combinations without the trained
 operator.
 
-## 2. Connect Ethernet
+> **Startup complete:** the battery and paired remote are on, the startup
+> sequence has finished, and Wobby is stable in damping mode.
+
+## Connection and inspection
+
+### 1. Connect Ethernet
 
 Connect the host directly to Wobby. Identify the interface that changes state
 when the cable is inserted:
@@ -97,7 +108,7 @@ ip -4 address show dev "${GO1_INTERFACE}"
 This `ip` configuration is temporary and disappears after the interface or
 computer restarts. The host and robot must have different addresses.
 
-## 3. Verify the robot network
+### 2. Verify the robot network
 
 Use the issued robot/controller address for the reachability check:
 
@@ -109,7 +120,7 @@ Continue only if replies arrive with `0% packet loss`. If ping fails, recheck
 the cable, interface name, host address, and robot power before changing
 software.
 
-## 4. Inspect an onboard computer over SSH
+### 3. Inspect an onboard computer over SSH
 
 The Go1 has separate robot-control and onboard-computer endpoints. The current
 onboard SSH address and credential are private lab inventory: obtain both from
@@ -135,7 +146,7 @@ ip -brief address
 Exit with `exit`. A successful SSH login is the end of the first checkout; it
 does not authorize starting a controller.
 
-## 5. Understand the software boundary
+### 4. Understand the software boundary
 
 The archived Go1 workflow predates the lab's current Go2 and G1 ROS 2 stacks.
 It uses Unitree Legged SDK, `unitree_ros_to_real`, and ROS 1-era packages. The
@@ -159,7 +170,7 @@ reviewed runbook for Wobby's current firmware and hardware.
 - The student records the endpoint, hostname, OS, kernel, and current
   `go1_info` commit without starting a motion or camera process.
 
-## Shut down
+## Shutdown procedure
 
 1. Stop and exit every active controller process, then close each SSH session
    with `exit`.
@@ -172,9 +183,15 @@ reviewed runbook for Wobby's current firmware and hardware.
    touching the battery button.
 6. Turn off the robot battery with one short button press followed by one long
    press.
+7. Turn off the paired remote with one short power-button press followed by one
+   long press.
 
 Do not power off while the Go1 is standing or while a controller process or
 SSH session remains active.
+
+> **Shutdown complete:** the robot is fully powered off, the remote is off,
+> and the Ethernet cable and battery are left safely arranged for the next
+> session.
 
 ## Next steps
 
