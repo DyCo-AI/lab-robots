@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "G1 humanoid"
+title: "G1 EDU overview"
 description: "Discover the G1 lab configuration and the current ROS 2 diagnostics development path."
 ---
 

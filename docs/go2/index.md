@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Go2 EDU"
+title: "Go2 EDU overview"
 description: "Connect to the Go2 EDU over Ethernet and begin onboard ROS 2 development."
 ---
 
