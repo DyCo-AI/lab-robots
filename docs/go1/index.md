@@ -77,6 +77,23 @@ not approved first-session hardware launch procedures.
 - Use an approved external power supply only while the robot is stationary,
   stable, and supervised. Never run locomotion with a power tether attached.
 
+## Known issues and maintenance
+
+- **Stock perception interfaces:** The Go1's onboard camera is not exposed as a
+  straightforward OpenCV/`cv2` capture source in the current lab workflow, so
+  it is inconvenient for custom vision development. The onboard LiDAR path is
+  also not qualified in the current perception stack; LiDAR data should be
+  handled as point clouds with ROS/PCL/Open3D tools rather than OpenCV.
+- **External perception path:** The lab added a ZED 2i camera and NVIDIA Jetson
+  AGX capability for visual perception and social-navigation experiments. See
+  [Go1 Density Social Navigation](https://github.com/sriram-2502/go1_density_social_nav)
+  for the implemented camera, compute, planning, and control pipeline.
+- [ ] **Repair and validate the LAN port.** Do not force a loose connector or
+  depend on the damaged port during a motion test.
+- [ ] **Repair the front-left motor wire.** A qualified maintainer must inspect
+  and replace or solder the wire, verify continuity and insulation, and complete
+  a supervised low-load acceptance test before normal motion experiments.
+
 ## Reference documentation
 
 - [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html)
@@ -93,6 +110,6 @@ not approved first-session hardware launch procedures.
 ## Current scope
 
 Ethernet, ping, SSH inventory, and read-only inspection form the current
-onboarding baseline. A bounded state reader, camera qualification, and reviewed
-motion acceptance procedure remain to be validated on Wobby's current hardware
-and firmware.
+onboarding baseline. Stock camera/LiDAR qualification, the two hardware repairs
+above, a bounded state reader, and a reviewed motion acceptance procedure remain
+to be completed on Wobby's current hardware and firmware.
