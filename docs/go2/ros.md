@@ -20,7 +20,7 @@ execute on the Go2 EDU's onboard Jetson expansion computer.
 
 <figure class="half-width-figure">
   <img src="https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-jetson-ethernet.png" alt="Annotated Go2 EDU Ethernet connection at the Jetson expansion dock" loading="lazy" decoding="async">
-  <figcaption>Lab photo from go2-ros. Use the annotated Jetson expansion-dock connection.</figcaption>
+  <figcaption>Annotated Ethernet connection at the Jetson expansion dock.</figcaption>
 </figure>
 
 ## Start in this order
@@ -53,7 +53,7 @@ total-motion-duration limit. Follow the complete clearance, remote, and feedback
 checks in the source runbook before using it.
 
 ![Go2 lab velocity demonstration](https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-velocity-demo.gif)
-<p class="caption">Lab demonstration from go2-ros. This page does not initiate robot motion.</p>
+<p class="caption">Supervised Go2 velocity demonstration.</p>
 
 ## Next development steps
 
