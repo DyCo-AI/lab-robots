@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Go2: Ethernet and ROS 2"
+title: "Go2 interface"
 description: "Connect Windows to the Go2 Jetson over Ethernet, inspect software, and follow the ROS starter."
 ---
 

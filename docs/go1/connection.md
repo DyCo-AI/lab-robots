@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Go1 first connection"
+title: "Go1 interface"
 description: "Connect a Linux host to the lab Go1, verify Ethernet and SSH, and understand the legacy ROS 1 stack."
 ---
 

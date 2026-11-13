@@ -11,7 +11,7 @@
     - title: Go1 EDU overview
       url: /go1/
       keywords: wobby quadruped hardware overview ros1 legacy
-    - title: Go1 first connection
+    - title: Go1 interface
       url: /go1/connection/
       keywords: wobby quadruped ethernet ssh nano xavier ros1 legacy
 - title: Widget / Go2 EDU
@@ -19,7 +19,7 @@
     - title: Go2 EDU overview
       url: /go2/
       keywords: widget quadruped ethernet jetson ros2
-    - title: Ethernet and ROS 2
+    - title: Go2 interface
       url: /go2/ros/
       keywords: ssh jetson foxy software rosbag
 - title: Evan Wobbier / G1 EDU
@@ -27,7 +27,7 @@
     - title: G1 EDU overview
       url: /g1/
       keywords: evan wobbier humanoid ubuntu humble gantry
-    - title: ROS 2 first connection
+    - title: G1 interface
       url: /g1/ros/
       keywords: ethernet network jetson dds ssh
     - title: Sensors and diagnostics

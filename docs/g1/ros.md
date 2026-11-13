@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "G1: ROS 2 first connection"
+title: "G1 interface"
 description: "Prepare Ubuntu, connect the G1 LAN, and distinguish robot discovery from onboard Jetson SSH."
 ---
 
