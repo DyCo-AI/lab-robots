@@ -18,8 +18,10 @@ execute on the Go2 EDU's onboard Jetson expansion computer.
   <div class="node">Go2 locomotion<small>Sport / DDS requests</small></div>
 </div>
 
-![Annotated Go2 EDU Ethernet connection at the Jetson expansion dock](https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-jetson-ethernet.png)
-<p class="caption">Lab photo from go2-ros. Use the annotated Jetson expansion-dock connection.</p>
+<figure class="half-width-figure">
+  <img src="https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-jetson-ethernet.png" alt="Annotated Go2 EDU Ethernet connection at the Jetson expansion dock" loading="lazy" decoding="async">
+  <figcaption>Lab photo from go2-ros. Use the annotated Jetson expansion-dock connection.</figcaption>
+</figure>
 
 ## Start in this order
 
