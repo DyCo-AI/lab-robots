@@ -16,13 +16,16 @@ shared workspace as research infrastructure rather than personal equipment.
   [DyCo-AI GitHub organization](https://github.com/DyCo-AI) whenever possible.
 - Track datasets and model artifacts with Hugging Face. Use an approved private
   repository until the data has been reviewed for publication.
+
+> **Lab credentials:** Use [Proton Pass](https://proton.me/pass) for lab
+> passwords, recovery details, and other private access information. Do not
+> copy vault contents into public documentation, source code, chat, or
+> experiment logs. Ask a senior PhD student or Dr. Umesh Vaidya if you need
+> access or have questions about the lab vault.
+{: .credential-notice }
+
 - Never commit passwords, tokens, SSH keys, private network details, or large
   datasets to Git.
-- Use [Proton Pass](https://proton.me/pass) for lab passwords, recovery details,
-  and other private access information. Do not copy vault contents into public
-  documentation, source code, chat, or experiment logs. Ask a senior PhD
-  student or Dr. Umesh Vaidya if you need access or have questions about the
-  lab vault.
 - Record the robot, operating-system and firmware versions, environment or
   dependency lockfile, code commit, dataset revision, launch command, and known
   limitations for every experiment.
