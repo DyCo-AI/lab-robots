@@ -23,7 +23,36 @@ execute on the Go2 EDU's onboard Jetson expansion computer.
   <figcaption>Annotated Ethernet connection at the Jetson expansion dock.</figcaption>
 </figure>
 
-## Start in this order
+Follow each session in this order:
+
+1. [Start the robot](#startup-procedure) in a stable mode.
+2. [Connect and inspect](#connection-and-inspection) over Ethernet and SSH.
+3. [Shut down safely](#shutdown-procedure) before leaving.
+
+## Startup procedure
+
+1. Place Widget prone on a flat, nonslip surface. Keep its body horizontal and
+   make sure no leg, joint, or foot is trapped under the body.
+2. On the robot battery, press the power button once briefly, then press it
+   again and hold for at least two seconds.
+3. Wait about two minutes. The head indicator flashes green during startup and
+   becomes steady green when startup is complete.
+4. Turn on the paired remote: press its power button once briefly, then press it
+   again and hold for at least two seconds.
+5. Press `L2 + B` to confirm damping mode.
+6. Press `L2 + A` to stand. After Widget is stable, press `START` once only if
+   the default walking gait and joystick control are needed.
+
+> **Startup complete:** Widget is powered, the remote is connected, and the
+> robot is stable in the intended mode.
+
+| Action | Remote control |
+| --- | --- |
+| Damping mode | `L2 + B` |
+| Stand / lower | `L2 + A` |
+| Unlock default gait | `START` |
+
+## Connection and inspection
 
 1. [Connect Ethernet and prepare SSH](https://github.com/DyCo-AI/go2-ros/blob/main/docs/SETUP.md).
 2. [Identify the installed Jetson, Ubuntu, ROS, and NVIDIA software](https://github.com/DyCo-AI/go2-ros/blob/main/docs/SOFTWARE.md) with the read-only inventory tool.
@@ -55,8 +84,35 @@ checks in the source runbook before using it.
 ![Go2 lab velocity demonstration](https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-velocity-demo.gif)
 <p class="caption">Go2 velocity demonstration.</p>
 
+## Shutdown procedure
+
+1. Stop active motion and controller scripts. Confirm that the commanded
+   velocity is zero and the robot is stationary.
+2. Stop ROS processes and leave each SSH session with `exit`.
+3. Move Widget to a flat, clear, stable area and remove tension from attached
+   cables.
+4. Press `L2 + A` to lower the robot from standing.
+5. Press `L2 + B` to enter damping mode. Confirm that Widget is fully prone and
+   stable before switching off the battery.
+6. On the robot battery, press the power button once briefly, then press it
+   again and hold for at least two seconds.
+7. Turn off the remote with the same short press followed by a press and hold
+   of at least two seconds.
+
+> **Shutdown complete:** Widget is prone, the robot and remote are powered off,
+> and the Ethernet cable and equipment are stored without strain.
+
+Do not switch off the battery while Widget is standing. Without active motor
+control, the robot can drop abruptly.
+
 ## Next development steps
 
 Wi-Fi SSH to the Jetson and a host-PC RL training/export/deployment workflow are
 TODOs in the starter. Its current velocity interface uses Unitree's existing
 walking controller. Read the [source roadmap and references](https://github.com/DyCo-AI/go2-ros#todo-wi-fi-ssh-and-host-pc-rl-development) before choosing a separate learning-control stack.
+
+## Operating references
+
+- [Official Unitree Go2 user manual](https://marketing.unitree.com/article/en/Go2/User_Manual.html)
+- [Official Unitree Go2 handheld remote manual](https://marketing.unitree.com/article/en/Go2/Handheld_Remote_Control.html)
+- [Lab Go2 setup runbook](https://github.com/DyCo-AI/go2-ros/blob/main/docs/SETUP.md)

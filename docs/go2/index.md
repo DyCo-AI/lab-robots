@@ -16,7 +16,7 @@ the onboard Jetson, verifies ROS 2 state, and records bags before any bounded
 motion test.
 
 <div class="cards">
-  <a class="card" href="{{ '/go2/ros/' | relative_url }}"><strong>Ethernet + ROS 2</strong><span>SSH into the Jetson. Inspect ROS state, run a bounded velocity example, and learn recording.</span></a>
+  <a class="card" href="{{ '/go2/ros/' | relative_url }}"><strong>Startup, Ethernet + ROS 2</strong><span>Start Widget, connect to the Jetson, inspect ROS state, run a bounded velocity example, record data, and shut down.</span></a>
 </div>
 
 ## Which level of control?
