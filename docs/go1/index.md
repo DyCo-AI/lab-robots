@@ -35,6 +35,26 @@ Confirm Wobby's current hardware, firmware, endpoint inventory, and paired
 remote with the maintainer before each checkout. Do not copy addresses,
 credentials, or commands from Go2 or G1 documentation.
 
+## External perception and compute setup
+
+For social-navigation experiments, Wobby carries a ZED 2i stereo camera,
+Wi-Fi antennas, an NVIDIA Jetson AGX Xavier, and a dedicated external battery
+in custom mounting hardware. See the
+[hardware description](https://github.com/sriram-2502/go1_density_social_nav/blob/main/docs/hardware.md)
+and [Go1 Density Social Navigation](https://github.com/sriram-2502/go1_density_social_nav)
+for the complete setup and software pipeline.
+
+<div class="hardware-gallery">
+  <figure>
+    <img src="https://raw.githubusercontent.com/sriram-2502/go1_density_social_nav/main/docs/assets/images/go1_front.png" alt="Front view of Wobby with labels identifying the ZED 2i camera, Wi-Fi antennas, external battery, and 3D-printed housing." loading="lazy" decoding="async">
+    <figcaption>Front: ZED 2i, Wi-Fi antennas, external battery, and custom housing.</figcaption>
+  </figure>
+  <figure>
+    <img src="https://raw.githubusercontent.com/sriram-2502/go1_density_social_nav/main/docs/assets/images/go1_back.png" alt="Rear view of Wobby with labels identifying the Jetson AGX Xavier and external battery pack." loading="lazy" decoding="async">
+    <figcaption>Rear: Jetson AGX Xavier and its dedicated battery pack.</figcaption>
+  </figure>
+</div>
+
 ## Main research tools
 
 The legacy Go1 research stack combines OCS2-based legged control with ROS and
