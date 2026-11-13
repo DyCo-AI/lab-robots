@@ -174,12 +174,3 @@ is standing or while a controller process is active.
 - Before commanding motion, add a reviewed Go1 runbook that identifies the
   active command source, remote intervention procedure, bounded test, and stop
   criteria for Wobby's current firmware.
-
-## Still to validate on Wobby
-
-- Verify and record the current onboard-computer inventory in the private lab
-  record.
-- Record Wobby's firmware, Go1 hardware revision, and paired-remote procedure.
-- Replace the historical controller notes with a bounded, reviewed read-only
-  state test and a separate motion acceptance procedure.
-- Qualify camera access without killing stock processes.
