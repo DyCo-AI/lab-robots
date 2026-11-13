@@ -18,7 +18,7 @@ requires a separately reviewed motion runbook.
 
 <div class="cards">
   <a class="card" href="{{ '/go1/connection/' | relative_url }}"><strong>First connection</strong><span>Prepare Wobby, configure Ethernet, verify ping, and inspect an onboard computer without starting motion.</span></a>
-  <a class="card" href="https://github.com/DyCo-AI/go1_info"><strong>Historical lab workspace</strong><span>Review the older ROS 1, perception, controller, and competition notes with the repository maintainer.</span></a>
+  <a class="card" href="https://github.com/DyCo-AI/go1_info"><strong>Lab workspace</strong><span>Review the ROS 1 perception, controller, and competition notes with the repository maintainer.</span></a>
 </div>
 
 ## Current lab profile
@@ -34,6 +34,36 @@ requires a separately reviewed motion runbook.
 Confirm Wobby's current hardware, firmware, endpoint inventory, and paired
 remote with the maintainer before each checkout. Do not copy addresses,
 credentials, or commands from Go2 or G1 documentation.
+
+## Main research tools
+
+The legacy Go1 research stack combines OCS2-based legged control with ROS and
+Gazebo planning and terrain simulation. The three DyCo-AI repositories below
+are private; request access from the maintainer. These are research codebases,
+not approved first-session hardware launch procedures.
+
+| Repository | Role in the Go1 stack |
+| --- | --- |
+| [robot_planner](https://github.com/DyCo-AI/robot_planner) | Converts general planners into dynamically feasible quadruped reference trajectories for the OCS2 locomotion stack. |
+| [legged_autonomy](https://github.com/DyCo-AI/legged_autonomy) | Integration workspace for locomotion, planning, mapping, terrain perception, and high-level decisions. |
+| [legged_locomotion](https://github.com/DyCo-AI/legged_locomotion) | OCS2 and `ros_control` NMPC/WBC stack for Go1 simulation and separately reviewed hardware experiments. |
+| [terrain_champ](https://github.com/AndrewZheng-1011/terrain_champ) | CHAMP and Gazebo terrain simulator used to collect joint-state and ground-reaction-force data across terrain and gait conditions. |
+| [Quad_ConvexMPC](https://github.com/AndrewZheng-1011/Quad_ConvexMPC) | MATLAB/CasADi LTV-MPC reference implementation for quadruped locomotion and gait tracking. |
+
+## Related publications
+
+1. Joseph Moyalan, Andrew Zheng, Sriram S. K. S. Narayanan, and Umesh Vaidya,
+   "[Off-Road Navigation of Legged Robots Using Linear Transfer Operators](https://arxiv.org/abs/2305.02938),"
+   *IFAC-PapersOnLine*, vol. 56, no. 3, pp. 613-618, 2023. Recipient of the
+   **ASME Dynamic Systems and Control Division Best Robotics Paper Award** at
+   MECC 2023 in Lake Tahoe, Nevada.
+2. Andrew Zheng and Sriram S. K. S. Narayanan,
+   "[Optimal Control for Quadruped Locomotion Using LTV MPC](https://arxiv.org/abs/2212.05154),"
+   arXiv:2212.05154, 2022. Developed as a Fall 2022 Optimal Control course
+   project at Clemson University.
+3. Sriram S. K. S. Narayanan, Andrew Zheng, and Umesh Vaidya,
+   "[Safe Motion Planning for Quadruped Robots Using Density Functions](https://arxiv.org/abs/2312.09173),"
+   in *2023 Ninth Indian Control Conference (ICC)*, IEEE, 2023.
 
 ## Hardware and operating notes
 
@@ -52,7 +82,7 @@ credentials, or commands from Go2 or G1 documentation.
 - [Unitree Go1 EDU documentation](https://unitree-docs.readthedocs.io/en/latest/get_started/Go1_Edu.html)
 - [Go1 operation guide](https://www.docs.quadruped.de/projects/go1/html/operation.html)
 - [Trossen Robotics Go1 documentation](https://docs.trossenrobotics.com/unitree_go1_docs/)
-- [Historical DyCo-AI Go1 notes](https://github.com/DyCo-AI/go1_info)
+- [DyCo-AI Go1 lab workspace](https://github.com/DyCo-AI/go1_info)
 - [Wobby at the ICRA 2023 Quadruped Robot Challenge](https://www.youtube.com/watch?v=Vqp2fmUyKt8&list=PLhkxi2e2mJdc00o857554Solq4MgaqwZN&index=6)
 - [ICRA 2023 challenge report](https://ieeexplore.ieee.org/document/10255505)
 
