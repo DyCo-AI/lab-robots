@@ -20,13 +20,13 @@ description: "Track robot onboarding, documentation, per-robot qualification, an
 
 ## Private access
 
-- [ ] Migrate the local private inventory to **Proton Pass**, after confirming institutional approval and sharing capacity.
+- [x] Designate [Proton Pass](https://proton.me/pass) as the lab password manager.
 - [ ] Verify provisional robot credentials and assign maintainers to review access during student turnover.
 - [ ] Document credential recovery and supported rotation procedures privately.
 
-No shared vault is currently implied to be available. Until migration, students
-request access directly from the instructor. Passwords and computer
-service-tag/password inventories are excluded from this public handbook.
+Students request vault access or credential help from a senior PhD student or
+Dr. Umesh Vaidya. Passwords and computer service-tag/password inventories are
+excluded from this public handbook.
 
 ## Robot development
 

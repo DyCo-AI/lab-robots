@@ -56,8 +56,9 @@ Open `http://127.0.0.1:4000/lab-robots/`. For a build only, use
 `bundle exec jekyll build --source docs`.
 
 No passwords, account recovery material, or full experiment recordings
-belong in this public repository. Request credentials privately from the lab
-maintainer. Proton Pass migration is planned; the shared vault is not yet live.
+belong in this public repository. The lab uses
+[Proton Pass](https://proton.me/pass) for private credential management. Ask a
+senior PhD student or Dr. Umesh Vaidya about access.
 
 ## Learning together in the lab
 
