@@ -18,7 +18,7 @@ requires a separately reviewed motion runbook.
 
 <div class="cards">
   <a class="card" href="{{ '/go1/connection/' | relative_url }}"><strong>First connection</strong><span>Prepare Wobby, configure Ethernet, verify ping, and inspect an onboard computer without starting motion.</span></a>
-  <a class="card" href="https://github.com/DyCo-AI/go1_info"><strong>Lab workspace</strong><span>Review the ROS 1 perception, controller, and competition notes with the repository maintainer.</span></a>
+  <a class="card" href="https://github.com/DyCo-AI/go1_info"><strong>Lab workspace</strong><span>Review the ROS 1 perception, controller, and competition notes.</span></a>
 </div>
 
 ## Current lab profile
@@ -28,12 +28,12 @@ requires a separately reviewed motion runbook.
 | Body | Unitree Go1 EDU, 12 actuated leg joints |
 | Primary development path | Direct Ethernet from a Linux host |
 | Software boundary | Historical Unitree Legged SDK and ROS 1 experiments |
-| Optional payloads | ZED2i camera and Jetson AGX configurations; use only under an approved runbook |
+| Optional payloads | ZED2i camera and Jetson AGX configurations; follow the project runbook |
 | Battery planning estimate | About 20 minutes; workload and battery condition dependent |
 
-Confirm Wobby's current hardware, firmware, endpoint inventory, and paired
-remote with the maintainer before each checkout. Do not copy addresses,
-credentials, or commands from Go2 or G1 documentation.
+Check Wobby's current hardware, firmware, endpoint inventory, and paired remote
+against the lab record. Do not copy addresses, credentials, or commands from
+Go2 or G1 documentation.
 
 ## External perception and compute setup
 
@@ -63,8 +63,7 @@ for the complete setup and software pipeline.
 
 The legacy Go1 research stack combines OCS2-based legged control with ROS and
 Gazebo planning and terrain simulation. The three DyCo-AI repositories below
-are private; request access from the maintainer. These are research codebases,
-not approved first-session hardware launch procedures.
+are private lab research codebases, not first-session hardware launch guides.
 
 | Repository | Role in the Go1 stack |
 | --- | --- |
@@ -98,8 +97,8 @@ not approved first-session hardware launch procedures.
 - External ZED2i cameras, Jetson AGX computers, and their mounts increase the
   hardware exposed during a fall. Start new controller tests without those
   payloads whenever possible.
-- Use an approved external power supply only while the robot is stationary,
-  stable, and supervised. Never run locomotion with a power tether attached.
+- Use a compatible external power supply only while the robot is stationary
+  and stable. Never run locomotion with a power tether attached.
 
 ## Known issues and maintenance
 
@@ -114,9 +113,9 @@ not approved first-session hardware launch procedures.
   for the implemented camera, compute, planning, and control pipeline.
 - [ ] **Repair and validate the LAN port.** Do not force a loose connector or
   depend on the damaged port during a motion test.
-- [ ] **Repair the front-left motor wire.** A qualified maintainer must inspect
-  and replace or solder the wire, verify continuity and insulation, and complete
-  a supervised low-load acceptance test before normal motion experiments.
+- [ ] **Repair the front-left motor wire.** Replace or solder the wire, verify
+  continuity and insulation, and complete a low-load acceptance test before
+  normal motion experiments.
 
 ## Reference documentation
 

@@ -11,8 +11,8 @@ description: "Connect a Linux host to the lab Go1, verify Ethernet and SSH, and 
 This page is the safe first-session path extracted from the lab's historical
 [`go1_info`](https://github.com/DyCo-AI/go1_info) notes. It covers physical
 preparation, wired reachability, and read-only inspection. The controller and
-planning notes in `go1_info` are older ROS 1 experiments; they are not an
-approved first-session motion procedure.
+planning notes in `go1_info` are older ROS 1 experiments and are not part of
+this first-session procedure.
 
 ## Reference documentation
 
@@ -21,9 +21,8 @@ approved first-session motion procedure.
 - [Trossen Robotics Go1 documentation](https://docs.trossenrobotics.com/unitree_go1_docs/)
 - [Historical DyCo-AI Go1 notes](https://github.com/DyCo-AI/go1_info)
 
-> Work with a trained lab member. Put the Go1 on a clear, level surface, keep
-> its paired remote available, and learn how to return it to damping before
-> enabling any program that can publish commands.
+> Put the Go1 on a clear, level surface, keep its paired remote available, and
+> know how to return it to damping before enabling command publishers.
 
 Follow every session in this order:
 
@@ -42,8 +41,8 @@ Follow every session in this order:
 - External ZED2i cameras, Jetson AGX computers, and their mounts substantially
   increase the hardware exposed during a fall. Begin new controllers without
   those payloads whenever the experiment permits.
-- Use an approved external power supply only while the robot is stationary,
-  stable, and supervised. Never run locomotion with a power tether attached.
+- Use a compatible external power supply only while the robot is stationary
+  and stable. Never run locomotion with a power tether attached.
 
 > **Replacement planning (reported August 2026):** Clemson's current purchase
 > order process does not permit direct Unitree replacement purchases. Verify
@@ -54,8 +53,7 @@ Follow every session in this order:
 - A Linux computer with an Ethernet port or USB-to-Ethernet adapter.
 - A direct Ethernet cable to the Go1 development port.
 - The current host CIDR, robot IP, onboard SSH IP, and SSH credential from the
-  lab maintainer. Per-robot network inventory and credentials are not stored on
-  this public site.
+  private lab network record. Credentials are not stored on this public site.
 - Access to [`DyCo-AI/go1_info`](https://github.com/DyCo-AI/go1_info) if you
   need the historical ROS 1, camera, or competition notes.
 
@@ -69,14 +67,12 @@ workspace. The archived Unitree quick guide records this startup sequence:
 3. Move clear. The Go1 starts and may stand automatically. Wait about one
    minute for the head light to flash before using the remote.
 4. Power the paired remote with one short press followed by one long press.
-5. With the trained operator ready, press `L2 + B` to place the robot in
-   **damping / low-power mode**. The robot lowers itself, so keep hands and feet
-   outside its workspace.
+5. Press `L2 + B` to place the robot in **damping / low-power mode**. The robot
+   lowers itself, so keep hands and feet outside its workspace.
 
 For this first checkout, do not press `Start` to unlock walking or fast-run
 control. The quick guide records `L2 + A` as the lock/stand/lie control, but
-students should not explore controller combinations without the trained
-operator.
+do not use unlisted controller combinations.
 
 > **Startup complete:** the battery and paired remote are on, the startup
 > sequence has finished, and Wobby is stable in damping mode.
@@ -123,9 +119,8 @@ software.
 ### 3. Inspect an onboard computer over SSH
 
 The Go1 has separate robot-control and onboard-computer endpoints. The current
-onboard SSH address and credential are private lab inventory: obtain both from
-the instructor for the assigned unit. Do not assume the robot/controller
-address is also the SSH endpoint.
+onboard SSH address and credential are in the private lab network record. Do
+not assume the robot/controller address is also the SSH endpoint.
 
 Set the issued address for the current terminal, then connect:
 
@@ -143,8 +138,7 @@ cat /etc/os-release
 ip -brief address
 ```
 
-Exit with `exit`. A successful SSH login is the end of the first checkout; it
-does not authorize starting a controller.
+Exit with `exit`. Stop here for the read-only first checkout.
 
 ### 4. Understand the software boundary
 
@@ -164,9 +158,9 @@ reviewed runbook for Wobby's current firmware and hardware.
 ## First-session pass criteria
 
 - The Go1 is stable in damping mode with the paired remote available.
-- The host shows the instructor-issued CIDR on the correct Ethernet interface.
+- The host shows the assigned CIDR on the correct Ethernet interface.
 - `ping -c 4 "${GO1_ROBOT_IP}"` reports `0% packet loss`.
-- The instructor-issued SSH endpoint opens with the private lab credential.
+- The assigned SSH endpoint opens with the private lab credential.
 - The student records the endpoint, hostname, OS, kernel, and current
   `go1_info` commit without starting a motion or camera process.
 
@@ -176,8 +170,7 @@ reviewed runbook for Wobby's current firmware and hardware.
    with `exit`.
 2. Place the robot on a flat, clear, and stable area with all four feet safely
    supported.
-3. With the paired remote and a trained operator present, press `L2 + A` to
-   enter stance.
+3. With the paired remote, press `L2 + A` to enter stance.
 4. Press `L2 + A` again to lower the robot into its sitting posture.
 5. Press `L2 + B` to enter damping mode. Confirm the robot is stable before
    touching the battery button.
@@ -196,7 +189,6 @@ SSH session remains active.
 ## Next steps
 
 - Review the private [`go1_info`](https://github.com/DyCo-AI/go1_info)
-  repository with its maintainer before using the legacy ROS 1 stack.
-- Before commanding motion, add a reviewed Go1 runbook that identifies the
-  active command source, remote intervention procedure, bounded test, and stop
-  criteria for Wobby's current firmware.
+  repository before using the legacy ROS 1 stack.
+- Before commanding motion, use a current runbook that identifies the active
+  command source, remote intervention procedure, test bounds, and stop criteria.

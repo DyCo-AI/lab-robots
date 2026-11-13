@@ -8,7 +8,7 @@ description: "Prepare Ubuntu, connect the G1 LAN, and distinguish robot discover
 # G1: first connection
 
 The development PC runs ROS 2 Humble, CycloneDDS, and the lab Rerun bridge.
-SSH to the onboard Jetson is a separate path for approved onboard diagnostics.
+SSH to the onboard Jetson is a separate path for onboard diagnostics.
 
 <div class="diagram" role="img" aria-label="Ubuntu host with ROS 2 Humble and Rerun connects over Ethernet to the G1 robot LAN; separate SSH accesses its auxiliary Jetson.">
   <div class="node">Ubuntu host<small>ROS 2 Humble / Rerun</small></div><span class="arrow" aria-hidden="true">↔</span>
@@ -19,7 +19,7 @@ SSH to the onboard Jetson is a separate path for approved onboard diagnostics.
 ## Follow the maintained runbooks
 
 1. Complete the [host installation guide](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/install/README.md), including the pinned dependencies and ROS message builds.
-2. With a trained operator, follow [hardware preparation](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/hardware/README.md) and the supported gantry/development-mode procedure.
+2. Follow [hardware preparation](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/hardware/README.md) and the gantry/development-mode procedure.
 3. Follow [network setup](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/network/README.md). Identify the real PC interface rather than copying an interface name blindly.
 4. Source ROS, the Unitree message workspace, and lab packages. Set CycloneDDS to the robot-facing interface.
 5. Complete [whole-robot read-only bring-up](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/bringup/README.md) and then [sensor checks]({{ '/g1/sensors/' | relative_url }}).
@@ -47,5 +47,5 @@ Record a passing route/ping check, fresh `/lf/lowstate`, live sensor observation
 host interface, code commit, and hardware/clamp configuration. Do not interpret
 successful discovery or a running viewer as permission to enable motion.
 
-For any later actuator test, read the [teleoperation runbook](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/teleop/README.md)
-and its hardware gates with the instructor. This handbook does not enable motion.
+For actuator tests, follow the [teleoperation runbook](https://github.com/DyCo-AI/g1-ros2/blob/main/docs/teleop/README.md)
+and complete its hardware gates before enabling motion.

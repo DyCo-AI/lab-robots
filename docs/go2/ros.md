@@ -28,7 +28,7 @@ execute on the Go2 EDU's onboard Jetson expansion computer.
 1. [Connect Ethernet and prepare SSH](https://github.com/DyCo-AI/go2-ros/blob/main/docs/SETUP.md).
 2. [Identify the installed Jetson, Ubuntu, ROS, and NVIDIA software](https://github.com/DyCo-AI/go2-ros/blob/main/docs/SOFTWARE.md) with the read-only inventory tool.
 3. Source the verified ROS 2 environment and confirm state/message imports.
-4. Follow the starter's supervised velocity and stop checkout.
+4. Follow the starter's bounded velocity and stop checkout.
 5. Add [optional ROS bag recording](https://github.com/DyCo-AI/go2-ros/blob/main/docs/RECORDING.md).
 
 ## Lab connection reference
@@ -53,7 +53,7 @@ total-motion-duration limit. Follow the complete clearance, remote, and feedback
 checks in the source runbook before using it.
 
 ![Go2 lab velocity demonstration](https://raw.githubusercontent.com/DyCo-AI/go2-ros/main/docs/assets/go2-velocity-demo.gif)
-<p class="caption">Supervised Go2 velocity demonstration.</p>
+<p class="caption">Go2 velocity demonstration.</p>
 
 ## Next development steps
 

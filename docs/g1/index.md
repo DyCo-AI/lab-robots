@@ -43,10 +43,9 @@ clamp state. Do not assume this profile applies to another G1 variant.
 - The lab has not observed a G1 crash as of November 2026. This is not evidence
   that a new controller is safe: deploy incrementally and use the gantry for
   startup and initial tests.
-- When the operator is not fully confident in a controller, a second trained
-  person must oversee the test and be ready to use the approved intervention
-  procedure. Do not attempt to catch a falling humanoid.
-- Use an approved external power supply only for stationary development with
+- Do not attempt to catch a falling humanoid; use the gantry and defined stop
+  procedure for new controller tests.
+- Use a compatible external power supply only for stationary development with
   the robot secured and the cable managed. Do not walk or run a motion test
   while tethered to external power.
 - Use **about two hours** only as a lab planning estimate for battery runtime.

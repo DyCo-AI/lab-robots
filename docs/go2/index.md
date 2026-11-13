@@ -34,8 +34,8 @@ qualified workflow.
 | Access | Private lab SSH credential |
 | Main repository | [go2-ros](https://github.com/DyCo-AI/go2-ros) |
 
-Confirm the assigned robot and current endpoint with the maintainer before
-connecting. Do not publish credentials in this handbook or a code repository.
+Confirm the assigned robot and endpoint against the current lab network record.
+Do not publish credentials in this handbook or a code repository.
 
 ## Hardware and operating notes
 
@@ -47,7 +47,7 @@ connecting. Do not publish credentials in this handbook or a code repository.
 - A fall can load an attached Ethernet cable and damage the robot port. A Wi-Fi
   adapter removes the tether but remains exposed to impact. Keep adapters and
   cables out of the fall envelope.
-- Use an approved external power supply only for stationary development. Do not
+- Use a compatible external power supply only for stationary development. Do not
   run locomotion while connected to a power tether.
 
 ## Reference documentation
