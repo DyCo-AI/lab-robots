@@ -161,11 +161,20 @@ reviewed runbook for Wobby's current firmware and hardware.
 
 ## Shut down
 
-Disconnect SSH with `exit`. With the trained operator, put the robot in its
-stable proning state before switching it off. The archived quick guide specifies
-one short battery-button press followed by one long press for shutdown; the
-remote uses the same short-then-long sequence. Do not power off while the Go1
-is standing or while a controller process is active.
+1. Stop and exit every active controller process, then close each SSH session
+   with `exit`.
+2. Place the robot on a flat, clear, and stable area with all four feet safely
+   supported.
+3. With the paired remote and a trained operator present, press `L2 + A` to
+   enter stance.
+4. Press `L2 + A` again to lower the robot into its sitting posture.
+5. Press `L2 + B` to enter damping mode. Confirm the robot is stable before
+   touching the battery button.
+6. Turn off the robot battery with one short button press followed by one long
+   press.
+
+Do not power off while the Go1 is standing or while a controller process or
+SSH session remains active.
 
 ## Next steps
 
