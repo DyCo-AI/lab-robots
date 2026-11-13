@@ -44,14 +44,18 @@ in custom mounting hardware. See the
 and [Go1 Density Social Navigation](https://github.com/sriram-2502/go1_density_social_nav)
 for the complete setup and software pipeline.
 
-<div class="hardware-gallery">
-  <figure>
+<div class="hardware-stack-gallery">
+  <figure class="hardware-stack-photo">
     <img src="https://raw.githubusercontent.com/sriram-2502/go1_density_social_nav/main/docs/assets/images/go1_front.png" alt="Front view of Wobby with labels identifying the ZED 2i camera, Wi-Fi antennas, external battery, and 3D-printed housing." loading="lazy" decoding="async">
-    <figcaption>Front: ZED 2i, Wi-Fi antennas, external battery, and custom housing.</figcaption>
+    <figcaption>Front view</figcaption>
   </figure>
-  <figure>
+  <figure class="hardware-stack-diagram">
+    <img src="https://raw.githubusercontent.com/sriram-2502/go1_density_social_nav/main/docs/assets/images/go1_stack.png" alt="System architecture connecting the ZED 2i and Jetson AGX perception stack, host laptop density planner, and onboard Unitree locomotion controller." loading="lazy" decoding="async">
+    <figcaption>Perception, planning, and locomotion architecture</figcaption>
+  </figure>
+  <figure class="hardware-stack-photo">
     <img src="https://raw.githubusercontent.com/sriram-2502/go1_density_social_nav/main/docs/assets/images/go1_back.png" alt="Rear view of Wobby with labels identifying the Jetson AGX Xavier and external battery pack." loading="lazy" decoding="async">
-    <figcaption>Rear: Jetson AGX Xavier and its dedicated battery pack.</figcaption>
+    <figcaption>Rear view</figcaption>
   </figure>
 </div>
 
