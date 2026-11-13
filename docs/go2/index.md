@@ -37,6 +37,18 @@ qualified workflow.
 Confirm the assigned robot and endpoint against the current lab network record.
 Do not publish credentials in this handbook or a code repository.
 
+## Main research tools
+
+The current Go2 stack has two maintained entry points: the ROS 2 baseline for
+robot-side development and the WebRTC gesture-navigation project. Start with
+`go2-ros` when the work requires Jetson access, ROS topics, motion commands, or
+data recording.
+
+| Repository | Role in the Go2 stack |
+| --- | --- |
+| [go2-ros](https://github.com/DyCo-AI/go2-ros) | Ethernet and SSH setup, onboard Jetson software inspection, ROS 2 state access, bounded velocity tests, and ROS bag recording. |
+| [go2-gesture-nav](https://github.com/sriram-2502/go2-gesture-nav) | WebRTC-based gesture tracking and navigation on Go2, developed for the CI: Mission Control course. |
+
 ## Hardware and operating notes
 
 - Treat **about two hours** as a lab planning estimate for battery runtime, not
